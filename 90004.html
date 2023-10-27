@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<!--<auther>X</auther>-->
+<!--<create>1621914698</create>-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="http://www.fractal-technology.com">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+                        <title>中国大学生计算机设计大赛国家级三等奖作品《丁达尔效应》—— 王玉龙、潘锐 </title>               <meta name="keywords" content="">
+                    <meta name="description" content="">    <script type="text/javascript">
+        if(!window.matchMedia) {
+            var el = document.createElement('div');
+            el.style.cssText = "position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: #575757; z-index: 999999;";
+            el.innerHTML = '<div style="position: absolute; top: 40%; left: 0; right: 0; margin: auto; width: 80%; font-family: Microsoft YaHei; font-size: 2em; font-weight: bold; text-align: center; color: #fff;">您当前使用的浏览器版本过低，<br>建议尽快升级您的浏览器，以获得更好的浏览体验！</div>';
+            document.documentElement.appendChild(el);
+        }
+    </script>
+    <link rel="stylesheet" href="static/css/vendor.css">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="static/css/main1.css">
+    <!-- endinject -->
+    <script src="static/js/vendor1.js"></script>
+    <!-- inject:js -->
+    <script src="static/js/main1.js"></script>
+    <!-- endinject -->
+    </head>
+<body>
+    <div class="x-layout">
+        <style>
+#myalert{ display:none; }
+.recruit .block1{ height: auto}
+.layer{background:url(static/image/con_mask.png);;position:fixed;left:0;right: 0;top:0;bottom: 0;width:100%;height:100%;z-index: 1000000;}
+.layer .myalert{padding:30px;background:#fff;width:240px;position:absolute;margin-top:-100px;top:50%;left:50%;margin-left:-120px;text-align:center; z-index: 100000}
+.layer .guan{background:url(static/image/clos.png) no-repeat center; display:block;width:23px;height:23px;position:absolute;top:10px;right:10px;}
+.layer .text{padding-bottom:15px;font-size:16px;color:#474747;}
+.layer .button{background:none;border:1px solid #bbbbbb;width:91px;height:29px;font:14px/100% "Microsoft YaHei", Arial, Tahoma, Helvetica, sans-serif;color: #707070;}
+</style>
+<script src="static/js/jweixin-1.6.0.js"></script>
+<script src="static/js/jweixin-1.6.0.js"></script>
+<script>
+    var jsticket="", jsappid="wxa02bcc40fc72ef6b";
+</script>
+<script>
+    var hexcase=0;var b64pad="";var chrsz=8;function hex_sha1(s){return binb2hex(core_sha1(str2binb(s),s.length*chrsz))}function b64_sha1(s){return binb2b64(core_sha1(str2binb(s),s.length*chrsz))}function str_sha1(s){return binb2str(core_sha1(str2binb(s),s.length*chrsz))}function hex_hmac_sha1(key,data){return binb2hex(core_hmac_sha1(key,data))}function b64_hmac_sha1(key,data){return binb2b64(core_hmac_sha1(key,data))}function str_hmac_sha1(key,data){return binb2str(core_hmac_sha1(key,data))}function sha1_vm_test(){return hex_sha1("abc")=="a9993e364706816aba3e25717850c26c9cd0d89d"}function core_sha1(x,len){x[len>>5]|=128<<(24-len%32);x[((len+64>>9)<<4)+15]=len;var w=Array(80);var a=1732584193;var b=-271733879;var c=-1732584194;var d=271733878;var e=-1009589776;for(var i=0;i<x.length;i+=16){var olda=a;var oldb=b;var oldc=c;var oldd=d;var olde=e;for(var j=0;j<80;j++){if(j<16){w[j]=x[i+j]}else{w[j]=rol(w[j-3]^w[j-8]^w[j-14]^w[j-16],1)}var t=safe_add(safe_add(rol(a,5),sha1_ft(j,b,c,d)),safe_add(safe_add(e,w[j]),sha1_kt(j)));e=d;d=c;c=rol(b,30);b=a;a=t}a=safe_add(a,olda);b=safe_add(b,oldb);c=safe_add(c,oldc);d=safe_add(d,oldd);e=safe_add(e,olde)}return Array(a,b,c,d,e)}function sha1_ft(t,b,c,d){if(t<20){return(b&c)|((~b)&d)}if(t<40){return b^c^d}if(t<60){return(b&c)|(b&d)|(c&d)}return b^c^d}function sha1_kt(t){return(t<20)?1518500249:(t<40)?1859775393:(t<60)?-1894007588:-899497514}function core_hmac_sha1(key,data){var bkey=str2binb(key);if(bkey.length>16){bkey=core_sha1(bkey,key.length*chrsz)}var ipad=Array(16),opad=Array(16);for(var i=0;i<16;i++){ipad[i]=bkey[i]^909522486;opad[i]=bkey[i]^1549556828}var hash=core_sha1(ipad.concat(str2binb(data)),512+data.length*chrsz);return core_sha1(opad.concat(hash),512+160)}function safe_add(x,y){var lsw=(x&65535)+(y&65535);var msw=(x>>16)+(y>>16)+(lsw>>16);return(msw<<16)|(lsw&65535)}function rol(num,cnt){return(num<<cnt)|(num>>>(32-cnt))}function str2binb(str){var bin=Array();var mask=(1<<chrsz)-1;for(var i=0;i<str.length*chrsz;i+=chrsz){bin[i>>5]|=(str.charCodeAt(i/chrsz)&mask)<<(32-chrsz-i%32)}return bin}function binb2str(bin){var str="";var mask=(1<<chrsz)-1;for(var i=0;i<bin.length*32;i+=chrsz){str+=String.fromCharCode((bin[i>>5]>>>(32-chrsz-i%32))&mask)}return str}function binb2hex(binarray){var hex_tab=hexcase?"0123456789ABCDEF":"0123456789abcdef";var str="";for(var i=0;i<binarray.length*4;i++){str+=hex_tab.charAt((binarray[i>>2]>>((3-i%4)*8+4))&15)+hex_tab.charAt((binarray[i>>2]>>((3-i%4)*8))&15)}return str}function binb2b64(binarray){var tab="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";var str="";for(var i=0;i<binarray.length*4;i+=3){var triplet=(((binarray[i>>2]>>8*(3-i%4))&255)<<16)|(((binarray[i+1>>2]>>8*(3-(i+1)%4))&255)<<8)|((binarray[i+2>>2]>>8*(3-(i+2)%4))&255);for(var j=0;j<4;j++){if(i*8+j*6>binarray.length*32){str+=b64pad}else{str+=tab.charAt((triplet>>6*(3-j))&63)}}}return str};
+    var share_url=window.location.href;
+    var timestamp=Math.round(new Date().getTime()/1000).toString();
+    var nonceStr=timestamp+parseInt(Math.random()*100000)+'';
+    var jsapi_ticket = window.jsticket || "";
+    var strSHA1=hex_sha1("jsapi_ticket=" + jsapi_ticket + "&noncestr="+nonceStr+"&timestamp="+timestamp+"&url="+share_url);//SHA1加密
+    var shareTitle = "中国大学生计算机设计大赛国家级三等奖作品《丁达尔效应》—— 王玉龙、潘锐 ";
+    var descContent = "";
+    wx.config({
+        debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+        appId: 'wxa02bcc40fc72ef6b', // 必填，公众号的唯一标识
+        timestamp: timestamp,
+        nonceStr: nonceStr,
+        signature: strSHA1,
+        jsApiList: [
+            "updateAppMessageShareData",
+            "updateTimelineShareData",
+        ] // 必填，需要使用的JS接口列表
+    });
+    wx.ready(function () {   //需在用户可能点击分享按钮前就先调用
+        wx.updateTimelineShareData({
+            title: shareTitle, // 分享标题
+            desc: '', // 分享描述
+            link: share_url, // 分享链接
+            imgUrl: window.location.protocol+'//'+window.location.host+'/64.jpg', // 分享图标
+            type: '',
+            dataUrl: '',
+            success: function () {
+                // _hmt.push(['_trackEvent', "转发", "click"]);
+            },
+            cancel: function () {
+
+            }
+        });
+        wx.updateAppMessageShareData({
+            title: shareTitle, // 分享标题
+            link: share_url, // 分享链接
+            imgUrl: window.location.protocol+'//'+window.location.host+'/64.jpg', // 分享图标
+            desc: '', // 分享描述
+            success: function () {
+                // _hmt.push(['_trackEvent', "转发", "click"]);
+            },
+            cancel: function () {
+            }
+        });
+    });
+</script>
+<div id="myalert" class="layer">
+    <div class="myalert">
+        <a href="javascript:;" onclick="myalert_hide();" class="guan"></a>
+        <div class="text">请输入关键字</div>
+        <a><button class="button" id="my_ok" style="cursor:pointer ;opacity: 1;transform: translateY(0px);">确定</button></a>
+    </div>
+</div>
+<script>
+function my_alert(text,callback) {
+    $('#myalert').show();
+    $('#myalert .myalert div').html(text);
+
+    $('#my_ok').click( function() {
+        $('#myalert').hide();
+
+        if (typeof(callback) == 'function') {
+            callback();
+            return false;
+        }
+    });
+}
+
+function myalert_hide(){
+    $('#myalert').hide();
+}
+</script>
+        <style>
+    .logo-box .widget-area-edit{top: 0px}
+    .logo .widget-area-edit{top: 0px}
+</style>
+<div class="x-header_new ">
+    <div class="box-1 p-show">
+        <div class="box1-logo">
+            <div class="box1-bg">
+                <div class="gif-box"><img src="static/picture/png78-1.gif" alt=""></div>
+                <div class="svgbox"></div>
+            </div>
+            <div class="logo-box"><a href="index.html">
+    <img src="static/picture/s61b2fc83b2c57.png" alt="" title="" class="i">
+</a></div>                        <div class="syx"></div>
+        </div>
+        <div class="box1-top">
+            <div class="x-wrap">
+                <div class="flexbox"><div class="item"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 一键直达</a></div><div class="item"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 微教技</a></div><div class="item"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; > 班日志</a></div><div class="item"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 图书馆</a></div><div class="item"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 邮箱</a></div><div class="item"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 捐赠</a></div><div class="item"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 就业</a></div><div class="item ffar"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> EN</a></div><div class="item search-mod">
+    <div class="search-tap xicon icon-search"></div>
+    <div class="search-box">
+        <div class="search-txt"><input type="text" class="search-input" placeholder="请输入您要搜索的内容"  ></div>
+        <div class="search-btn"><button class="search-submit" ><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; >搜索</a></button></div>
+    </div>
+</div></div>            </div>
+        </div>
+        <div class="box1-bot">
+            <div class="x-wrap">
+                <div class="box1-navbox"><div class="nav-item nav-lv1-item " data-id="0">
+                    <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="index.html" >首页</a></div>
+                </div><div class="nav-item nav-lv1-item " data-id="3">
+            <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>学习</a></div>
+                </div><div class="nav-item nav-lv1-item " data-id="4">
+            <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>要闻</a></div>
+                </div><div class="nav-item nav-lv1-item " data-id="5">
+            <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>媒体</a></div>
+                </div><div class="nav-item nav-lv1-item " data-id="7">
+            <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>专题</a></div>
+                </div><div class="nav-item nav-lv1-item " data-id="6">
+            <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>开发</a></div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="lv2-cont">
+                        <div class="lv2-lbox">
+                            <div class="lv2-lbox-tit">开发</div>
+                            <div class="lv2-lbox-list">
+                                <div class="nav-item nav-lv2-item">
+                                    <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="http://127.0.0.1:20811/E%e9%9d%92%e6%9d%be/" >心理建设</a></div>
+                                </div><div class="nav-item nav-lv2-item">
+                                    <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="http://127.0.0.1:20811/log/index.php/index/index" >日志特色</a></div>
+                                </div><div class="nav-item nav-lv2-item">
+                                    <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>戏曲熏陶</a></div>
+                                    </div>                            </div>
+                        </div>
+                        <div class="lv2-rbox"><div class="p"></div>
+                        <div class="imgbox">
+                            <div class="img"><img src="static/picture/s64eac0bd638e8.jpg" alt="" title="" class="i"></div>
+                        </div></div>                    </div>
+                                        </div>
+                                    </div>    </div><div class="nav-item nav-lv1-item " data-id="8">
+                                <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>人物</a></div>
+                                <div class="nav-lv nav-lv2">
+                                        <div class="nav-grp">
+                                            <div class="lv2-cont">
+                                                <div class="lv2-lbox">
+                                                    <div class="lv2-lbox-tit">人物</div>
+                                                    <div class="lv2-lbox-list">
+                                                        <div class="nav-item nav-lv2-item">
+                                                                <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>师者</a></div>
+                                                            </div><div class="nav-item nav-lv2-item">
+                                                                <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>学生</a></div>
+                                                            </div>                            </div>
+                                                </div>
+                                                <div class="lv2-rbox"><div class="p"></div>
+                        <div class="imgbox">
+                            <div class="img"><img src="static/picture/s64f306457b844.jpg" alt="" title="" class="i"></div>
+                        </div></div>                    </div>
+                                        </div>
+                                    </div>    </div><div class="nav-item nav-lv1-item " data-id="9">
+                                <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="image.html">影像</a></div>
+                                <div class="nav-lv nav-lv2">
+                                        <div class="nav-grp">
+                                            <div class="lv2-cont">
+                                                <div class="lv2-lbox">
+                                                    <div class="lv2-lbox-tit">影像</div>
+                                                    <div class="lv2-lbox-list">
+                                                        <div class="nav-item nav-lv2-item">
+                                                                <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="image.html">图集</a></div>
+                                                            </div><div class="nav-item nav-lv2-item">
+                                                                <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="video.html">视频</a></div>
+                                                            </div>                            </div>
+                                                </div>
+                                                <div class="lv2-rbox"><div class="p"></div>
+                        <div class="imgbox">
+                            <div class="img"><img src="static/picture/s64eac084b090b.jpg" alt="" title="" class="i"></div>
+                        </div></div>                    </div>
+                </div>
+            </div>    </div><div class="nav-item nav-lv1-item " data-id="0">
+                <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="index.html">中文主页</a></div>
+            </div><div class="nav-item nav-lv1-item " data-id="0">
+        <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; >English</a></div>
+            </div></div>            </div>
+        </div>
+    </div>
+
+    <div class="box-2">
+        <div class="nav-mod">
+            <div class="x-wrap">
+                <div class="search-box m-show">
+                    <div class="search-txt"><input type="text" class="search-input" placeholder="请输入您要搜索的内容"  ></div>
+                    <div class="search-btn"><button class="search-submit" ><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; >搜索</a></button></div>
+                </div>
+                <div class="nav-box"><div class="nav-item nav-lv1-item" data-id="0">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="index.html">首页</a>
+                    </div>
+            </div>
+    <div class="nav-item nav-lv1-item" data-id="3">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>学习</a>
+                    </div>
+            </div>
+    <div class="nav-item nav-lv1-item" data-id="4">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>要闻</a>
+                    </div>
+            </div>
+    <div class="nav-item nav-lv1-item" data-id="5">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>媒体</a>
+                    </div>
+            </div>
+    <div class="nav-item nav-lv1-item" data-id="7">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>专题</a>
+                    </div>
+            </div>
+    <div class="nav-item nav-lv1-item" data-id="6">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>开发</a>
+            <div class="arr xicon icon-down"></div>        </div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                        <div class="nav-tit nav-lv2-tit">
+                            <a class="nav-link nav-lv2-link" href="http://127.0.0.1:20811/E%e9%9d%92%e6%9d%be/" >心理建设</a>
+                        </div>
+                    </div><div class="nav-item nav-lv2-item">
+                        <div class="nav-tit nav-lv2-tit">
+                            <a class="nav-link nav-lv2-link" href="http://127.0.0.1:20811/log/index.php/index/index" >日志特色</a>
+                        </div>
+                    </div><div class="nav-item nav-lv2-item">
+                        <div class="nav-tit nav-lv2-tit">
+                            <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>戏曲熏陶</a>
+                        </div>
+                        </div>                </div>
+            </div>    </div>
+    <div class="splite"></div><div class="nav-item nav-lv1-item" data-id="8">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>人物</a>
+            <div class="arr xicon icon-down"></div>        </div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>师者</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>学生</a>
+                            </div>
+                        </div>                </div>
+            </div>    </div>
+    <div class="nav-item nav-lv1-item" data-id="9">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="image.html">影像</a>
+            <div class="arr xicon icon-down"></div>        </div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="image.html">图集</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="video.html">视频</a>
+                            </div>
+                        </div>                </div>
+            </div>    </div>
+    <div class="nav-item nav-lv1-item" data-id="0">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="index.html" >中文主页</a>
+                    </div>
+            </div>
+    <div class="nav-item nav-lv1-item" data-id="0">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>English</a>
+                    </div>
+            </div>
+    <div class="nav-item search-mod p-show">
+    <div class="search-tap xicon icon-search"></div>
+    <div class="search-box">
+        <div class="search-txt"><input type="text" class="search-input" placeholder="请输入您要搜索的内容"  ></div>
+        <div class="search-btn"><button class="search-submit" ><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; >搜索</a></button></div>
+    </div>
+</div>
+<script type="text/javascript">
+    //一级高亮
+    var nowurl = ( "/news/video.html" != 'javascript:void(0);' ) ? "/news/video.html" : window.location.pathname;
+    var _nowurl = "/news/video.html";
+    $('.box1-navbox .nav-lv1-item').each(function(){
+        var ornow = $(this).find('a').attr('href');
+        var category_parent = $(this).attr('data-id');
+        if(ornow == nowurl || category_parent=="9" || category_parent == ""){
+            $(this).addClass('cur').siblings().removeClass('cur');
+        };
+    });
+    $('.box-2 .nav-box .nav-lv1-item').each(function(){
+        var ornow = $(this).find('a').attr('href');
+        var category_parent = $(this).attr('data-id');
+        if(ornow == nowurl || category_parent=="9" || category_parent == ""){
+            $(this).addClass('cur').siblings().removeClass('cur');
+        };
+    });
+</script>
+<script type="text/javascript">
+    $('#btn_Search3').click(function(){
+        var keywords = $("#txt_Search3").val();
+        if(keywords == ''){
+            my_alert("请输入关键字");
+            return false;
+        }
+        var tit = "中国大学生计算机设计大赛国家级三等奖作品《丁达尔效应》—— 王玉龙、潘锐 ";
+        if(tit=="搜索结果"){
+            window.location.href = "/searchsnews/keywords/" + encodeURI(keywords);
+        }else{
+            window.open("/searchsnews/keywords/" + encodeURI(keywords),null);
+        }
+    });
+</script></div>                <div class="bottom">
+    <div class="tools-mod"><a class="tools-item" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 一键直达</a><a class="tools-item" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 微人大</a><a class="tools-item" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 班日志</a><a class="tools-item" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 图书馆</a><a class="tools-item" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 邮箱</a><a class="tools-item" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 捐赠</a><a class="tools-item" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 就业</a><a class="tools-item lang" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> EN</a></div>                </div>
+</div>
+        </div>
+
+        <div class="x-wrap slogan-wrap">
+            <div class="slogan"></div>
+        </div>
+        <div class="menu-mod">
+            <div class="box-2-logobox">
+                <div class="logo"><a href="index.html">
+    <img src="static/picture/s61b2fc83b2c57.png" alt="" title="" class="i">
+</a>
+<div class="syx"></div></div>            </div>
+            <div class="menu-btn"><span class="line"></span></div>
+        </div>
+    </div>
+</div>
+<script>
+    var p=1;
+    $(function(){
+        $('#btn_Search').click(function(){
+            console.log(222);
+            var keywords = $("#txt_Search").val();
+            if(keywords == ''){
+                my_alert("请输入关键字");
+                return false;
+            }
+            var tit = "中国大学生计算机设计大赛国家级三等奖作品《丁达尔效应》—— 王玉龙、潘锐 ";
+            if(tit=="搜索结果"){
+                window.location.href = "/searchsnews/keywords/" + encodeURI(keywords);
+            }else{
+                window.open("/searchsnews/keywords/" + encodeURI(keywords),null);
+            }
+        });
+        $('#btn_Search2').click(function(){
+            var keywords = $("#txt_Search2").val();
+            console.log(111);
+            if(keywords == ''){
+                my_alert("请输入关键字");
+                return false;
+            }
+            var tit = "中国大学生计算机设计大赛国家级三等奖作品《丁达尔效应》—— 王玉龙、潘锐 ";
+            if(tit=="搜索结果"){
+                window.location.href = "/searchsnews/keywords/" + encodeURI(keywords);
+            }else{
+                window.open("/searchsnews/keywords/" + encodeURI(keywords),null);
+            }
+        });
+    })
+    function keydown(e, but) {
+        var currKey=0,e=e||event;
+        var _this = $(but);
+        if(e.keyCode==13)
+        {
+            _this.click();
+            return false;
+        }
+    }
+</script>
+            <script type="text/javascript">
+    //精博信专用，需删
+    $('.x-layout .x-header').removeClass('pos-abs').addClass('o_header');
+</script>
+<link rel="stylesheet" type="text/css" href="static/css/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" type="text/css" href="static/css/video-js.css">
+<link rel="stylesheet" type="text/css" href="static/css/global1.css">
+<link rel="stylesheet" type="text/css" href="static/css/base2.css">
+<link rel="stylesheet" type="text/css" href="static/css/flex.css">
+<link rel="stylesheet" type="text/css" href="static/css/art.css">
+
+<script src="static/js/jquery.placeholder.min.js"></script>
+<script src="static/js/jquery.mcustomscrollbar.concat.min.js"></script>
+<script src="static/js/slick1.js"></script>
+<script src="static/js/global1.js"></script>
+<script src="static/js/video.js"></script>
+
+<script>
+    $(window).on('load',function(){
+
+        //全站 load//
+        $('.desc img').each(function(){
+            // 为img 标签的父级元素增加class
+            var imgalign = $(this).attr('align');
+            if(imgalign == 'left'){
+                $(this).css('margin','0 20px 5px 0');
+            }else if(imgalign == 'right'){
+                $(this).css('margin','5px 0 5px 20px');
+            }else {
+                $(this).css('margin', '5px 0 5px 0');
+            }
+        });
+    });
+</script>
+<div class="x-container" data-np="true">
+    <div class="x-wrap x-wrapL">
+        <div class="bread-mod ">
+            <div class="x-wrap">
+
+    <div class="bread-item">
+        <a class="bread-link" href="index.html">首页</a>
+    </div>
+              <div class="bread-item"><a class="bread-link" href="video.html">影像</a></div>
+                        <div class="bread-item cur"><a class="bread-link" href="video.html">视频</a></div>              <div class="bread-item cur">正文</div>
+                  </div>
+ 
+        </div>
+        <div class="arts1 article-page">
+            <div class="art1">
+                <div class="t2"></div>
+                <div class="tit">
+                    中国大学生计算机设计大赛国家级三等奖作品《丁达尔效应》—— 王玉龙、潘锐                 </div>
+                <div class="t2"></div>
+                <div class="tag">
+                                                            <span class="date s">时间：2023.09.23</span>
+                </div>
+                <div class="desc article-cont">
+                        <div class="vd">
+                                <video controls="" poster="static/video/07.jpg" src="static/video/07.mp4" controls=""></video>
+                                                            </div>
+                          <br>                    <div class="co ">
+                                            </div>
+                </div>
+                <div class="share-mod">
+                    <div class="share-label">分享</div>
+                    <div class="share-box">
+                        <a href="#" class="share-item icon-wb" title="分享到新浪微博"><img src="static/picture/ico21.png" alt="" class="i"></a>
+                        <a href="#" class="share-item suds-mod icon-wx"><img src="static/picture/ico31.png" alt="" class="i">
+                            <div class="suds-pop at-t">
+                                <div class="code"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="ul">
+                                                        </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    $(function(){
+        $.each($('.co').children(),function(e){
+            if($(this).attr('align')=='center' || $(this).css('textAlign') =='center'){
+                $(this).css({'textAlign': 'center','textIndent':'0'})
+            }
+        })
+
+        $(window).on('load',function(){
+
+            //load//
+            $('.desc img').each(function(){
+                // 为img 标签的父级元素增加class
+                var imgalign = $(this).attr('align');
+                if(imgalign == 'left'){
+                    $(this).css('margin','0 20px 5px 0');
+                }else if(imgalign == 'right'){
+                    $(this).css('margin','5px 0 5px 20px');
+                }else {
+                    $(this).css('margin', '5px 0 5px 0');
+                }
+            });
+
+            if($(window).width() < 768){
+                $('.desc video').each(function(){
+                    var imgalign = $(this).attr('align');
+                    if(imgalign == 'left'){
+                        $(this).css('margin','0 20px 5px 0');
+                    }else if(imgalign == 'right'){
+                        $(this).css('margin','5px 0 5px 20px');
+                    }else {
+                        $(this).css('margin', '5px 0 5px 0');
+                    }
+                });
+            }
+        });
+
+        $(window).on('resize',function(){
+
+            //resize//
+        });
+
+        $(window).on('scroll',function(){
+
+            //scroll//
+        });
+
+    });
+</script>
+<div class="x-footer_new home">
+    <div class="footer-cont">
+        <div class="x-wrap">
+            <div class="logo" style="min-height:14px;"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";><img src="static/picture/s60bf2d0b2b898.png" alt="" title="" class="i"></a></div>            <div class="bottom">
+                <div class="text">
+                    <div class="nav_foot" style="min-height:20px;min-width:20px"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>我们</a><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>一键直达</a></div>                    <div class="p" style="min-height:14px;"><span class="">地址：安徽省芜湖市镜湖区安徽师范大学赭山校区</span>
+<span class="">邮编：241001</span>
+</div>                    <div class="p">
+
+                    </div>
+                    <div class="ul">
+                        
+                        <div class="li suds-mod">
+                            <div class="cir">
+                                <div class="icon"><img src="static/picture/ico2.png" alt="" class="i"></div>
+                            </div>
+                            <div class="suds-pop at-t">
+                                <div class="code" style="min-height:14px;"><a href="#"><img src="static/picture/1.png" alt="" title="" class="i"></a></div>                            </div>
+                        </div>
+                        <div class="li suds-mod">
+                            <div class="cir">
+                                <div class="icon"><img src="static/picture/ico3.png" alt="" class="i"></div>
+                            </div>
+                            <div class="suds-pop at-t">
+                                <div class="code" style="min-height:14px;"><a href="#"><img src="static/picture/2.png" alt="" title="" class="i"></a></div>                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="f-rbox">
+                    <div class="mail">
+                        <div class="bg"><img src="static/picture/png2.png" alt="" class="i"></div>
+                        <div class="cont">
+                            <div class="t" style="min-height:14px;min-width:14px;">联系我们</div>                            <div class="p" style="min-height:14px;min-width:14px;">&nbsp; &nbsp;投稿邮箱：<br>1070624143@qq.com</div>                        </div>
+                    </div>
+
+                    <div class="gotop"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?a46081a3fea0cd20ebf57c5e888ae7f0";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+    </div>
+            <style>
+    .empty-data{ width:100%; font-size:25px; padding-top:8%; padding-bottom:8%; text-align: center;}
+    </style>
+    </body>
+</html>

@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<!--<auther>X</auther>-->
+<!--<create>1621914698</create>-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="apple-touch-icon" type="image/x-icon" href="https://www.ruc.edu.cn/Public/static/themes/zgrmdxzw/cn/image/footer_red.png">
+    <link rel="apple-touch-icon" type="image/x-icon" href="https://www.ruc.edu.cn/Public/static/themes/zgrmdxzw/cn/image/footer_red.png" sizes="76x76">
+    <link rel="apple-touch-icon" type="image/x-icon" href="https://www.ruc.edu.cn/Public/static/themes/zgrmdxzw/cn/image/footer_red.png" sizes="120x120">
+    <link rel="apple-touch-icon" type="image/x-icon" href="https://www.ruc.edu.cn/Public/static/themes/zgrmdxzw/cn/image/footer_red.png" sizes="152x152">
+    <meta name="keywords" content="">
+    <meta name="description" content="2020级教育技术学1班官方网站。">
+    
+    <title>2020级教育技术学1班</title>
+       <script type="text/javascript">
+        if(!window.matchMedia) {
+            var el = document.createElement('div');
+            el.style.cssText = "position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: #575757; z-index: 999999;";
+            el.innerHTML = '<div style="position: absolute; top: 40%; left: 0; right: 0; margin: auto; width: 80%; font-family: Microsoft YaHei; font-size: 2em; font-weight: bold; text-align: center; color: #fff;">您当前使用的浏览器版本过低，<br>建议尽快升级您的浏览器，以获得更好的浏览体验！</div>';
+            document.documentElement.appendChild(el);
+        }
+    </script>
+      
+
+    <link rel="stylesheet" href="static/css/vendor.css">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="static/css/main.css">
+    <!-- endinject -->
+    <script src="static/js/vendor.js"></script>
+    <!-- inject:js -->
+    <script src="static/js/main.js"></script>    <link href="static/css/calendar.css" rel="stylesheet">
+    <script src="static/js/calendario.js"></script>
+</head>
+<body>
+    <div class="x-layout">
+        <style>
+#myalert{ display:none; }
+.recruit .block1{ height: auto}
+.layer{background:url(static/image/con_mask.png);;position:fixed;left:0;right: 0;top:0;bottom: 0;width:100%;height:100%;z-index: 1000000;}
+.layer .myalert{padding:30px;background:#fff;width:240px;position:absolute;margin-top:-100px;top:50%;left:50%;margin-left:-120px;text-align:center; z-index: 100000}
+.layer .guan{background:url(static/image/clos.png) no-repeat center; display:block;width:23px;height:23px;position:absolute;top:10px;right:10px;}
+.layer .text{padding-bottom:15px;font-size:16px;color:#474747;}
+.layer .button{background:none;border:1px solid #bbbbbb;width:91px;height:29px;font:14px/100% "Microsoft YaHei", Arial, Tahoma, Helvetica, sans-serif;color: #707070;}
+</style>
+<script src="static/js/jweixin-1.6.0.js"></script>
+<script src="static/js/jweixin-1.6.0.js"></script>
+<script>
+    var jsticket="", jsappid="wxa02bcc40fc72ef6b";
+</script>
+<script>
+    var hexcase=0;var b64pad="";var chrsz=8;function hex_sha1(s){return binb2hex(core_sha1(str2binb(s),s.length*chrsz))}function b64_sha1(s){return binb2b64(core_sha1(str2binb(s),s.length*chrsz))}function str_sha1(s){return binb2str(core_sha1(str2binb(s),s.length*chrsz))}function hex_hmac_sha1(key,data){return binb2hex(core_hmac_sha1(key,data))}function b64_hmac_sha1(key,data){return binb2b64(core_hmac_sha1(key,data))}function str_hmac_sha1(key,data){return binb2str(core_hmac_sha1(key,data))}function sha1_vm_test(){return hex_sha1("abc")=="a9993e364706816aba3e25717850c26c9cd0d89d"}function core_sha1(x,len){x[len>>5]|=128<<(24-len%32);x[((len+64>>9)<<4)+15]=len;var w=Array(80);var a=1732584193;var b=-271733879;var c=-1732584194;var d=271733878;var e=-1009589776;for(var i=0;i<x.length;i+=16){var olda=a;var oldb=b;var oldc=c;var oldd=d;var olde=e;for(var j=0;j<80;j++){if(j<16){w[j]=x[i+j]}else{w[j]=rol(w[j-3]^w[j-8]^w[j-14]^w[j-16],1)}var t=safe_add(safe_add(rol(a,5),sha1_ft(j,b,c,d)),safe_add(safe_add(e,w[j]),sha1_kt(j)));e=d;d=c;c=rol(b,30);b=a;a=t}a=safe_add(a,olda);b=safe_add(b,oldb);c=safe_add(c,oldc);d=safe_add(d,oldd);e=safe_add(e,olde)}return Array(a,b,c,d,e)}function sha1_ft(t,b,c,d){if(t<20){return(b&c)|((~b)&d)}if(t<40){return b^c^d}if(t<60){return(b&c)|(b&d)|(c&d)}return b^c^d}function sha1_kt(t){return(t<20)?1518500249:(t<40)?1859775393:(t<60)?-1894007588:-899497514}function core_hmac_sha1(key,data){var bkey=str2binb(key);if(bkey.length>16){bkey=core_sha1(bkey,key.length*chrsz)}var ipad=Array(16),opad=Array(16);for(var i=0;i<16;i++){ipad[i]=bkey[i]^909522486;opad[i]=bkey[i]^1549556828}var hash=core_sha1(ipad.concat(str2binb(data)),512+data.length*chrsz);return core_sha1(opad.concat(hash),512+160)}function safe_add(x,y){var lsw=(x&65535)+(y&65535);var msw=(x>>16)+(y>>16)+(lsw>>16);return(msw<<16)|(lsw&65535)}function rol(num,cnt){return(num<<cnt)|(num>>>(32-cnt))}function str2binb(str){var bin=Array();var mask=(1<<chrsz)-1;for(var i=0;i<str.length*chrsz;i+=chrsz){bin[i>>5]|=(str.charCodeAt(i/chrsz)&mask)<<(32-chrsz-i%32)}return bin}function binb2str(bin){var str="";var mask=(1<<chrsz)-1;for(var i=0;i<bin.length*32;i+=chrsz){str+=String.fromCharCode((bin[i>>5]>>>(32-chrsz-i%32))&mask)}return str}function binb2hex(binarray){var hex_tab=hexcase?"0123456789ABCDEF":"0123456789abcdef";var str="";for(var i=0;i<binarray.length*4;i++){str+=hex_tab.charAt((binarray[i>>2]>>((3-i%4)*8+4))&15)+hex_tab.charAt((binarray[i>>2]>>((3-i%4)*8))&15)}return str}function binb2b64(binarray){var tab="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";var str="";for(var i=0;i<binarray.length*4;i+=3){var triplet=(((binarray[i>>2]>>8*(3-i%4))&255)<<16)|(((binarray[i+1>>2]>>8*(3-(i+1)%4))&255)<<8)|((binarray[i+2>>2]>>8*(3-(i+2)%4))&255);for(var j=0;j<4;j++){if(i*8+j*6>binarray.length*32){str+=b64pad}else{str+=tab.charAt((triplet>>6*(3-j))&63)}}}return str};
+    var share_url=window.location.href;
+    var timestamp=Math.round(new Date().getTime()/1000).toString();
+    var nonceStr=timestamp+parseInt(Math.random()*100000)+'';
+    var jsapi_ticket = window.jsticket || "";
+    var strSHA1=hex_sha1("jsapi_ticket=" + jsapi_ticket + "&noncestr="+nonceStr+"&timestamp="+timestamp+"&url="+share_url);//SHA1加密
+    var shareTitle = "2020级教育技术学1班";
+    var descContent = "";
+    wx.config({
+        debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+        appId: 'wxa02bcc40fc72ef6b', // 必填，公众号的唯一标识
+        timestamp: timestamp,
+        nonceStr: nonceStr,
+        signature: strSHA1,
+        jsApiList: [
+            "updateAppMessageShareData",
+            "updateTimelineShareData",
+        ] // 必填，需要使用的JS接口列表
+    });
+    console.log(window.location.protocol+'//'+window.location.host+'/64.jpg');
+    wx.ready(function () {   //需在用户可能点击分享按钮前就先调用
+        wx.updateTimelineShareData({
+            title: shareTitle, // 分享标题
+            desc: '', // 分享描述
+            link: share_url, // 分享链接
+            imgUrl: window.location.protocol+'//'+window.location.host+'/64.jpg', // 分享图标
+            type: '',
+            dataUrl: '',
+            success: function () {
+                // _hmt.push(['_trackEvent', "转发", "click"]);
+            },
+            cancel: function () {
+
+            }
+        });
+        wx.updateAppMessageShareData({
+            title: shareTitle, // 分享标题
+            link: share_url, // 分享链接
+            imgUrl: window.location.protocol+'//'+window.location.host+'/64.jpg', // 分享图标
+            desc: '', // 分享描述
+            success: function () {
+                // _hmt.push(['_trackEvent', "转发", "click"]);
+            },
+            cancel: function () {
+            }
+        });
+    });
+</script>
+<div id="myalert" class="layer">
+    <div class="myalert">
+        <a href="javascript:;" onclick="myalert_hide();" class="guan"></a>
+        <div class="text">请输入关键字</div>
+        <a><button class="button" id="my_ok" style="cursor:pointer ;opacity: 1;transform: translateY(0px);">确定</button></a>
+    </div>
+</div>
+<script>
+function my_alert(text,callback) {
+    $('#myalert').show();
+    $('#myalert .myalert div').html(text);
+
+    $('#my_ok').click( function() {
+        $('#myalert').hide();
+
+        if (typeof(callback) == 'function') {
+            callback();
+            return false;
+        }
+    });
+}
+
+function myalert_hide(){
+    $('#myalert').hide();
+}
+</script>
+        <div class="sidebar-mod"><div class="h">
+    <a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; class="sidebar-item s1 s-map">
+    <!--<a href="sitemap.html" class="sidebar-item s1 s-map">-->
+            <div class="sidebar-cont">
+                <div class="icon"><img src="static/picture/png39.png" alt="" class="i"></div>
+                <div class="t"><span>一键直达</span></div>
+            </div>
+        </a><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";  class="sidebar-item s2 ">
+            <div class="sidebar-cont">
+                <div class="icon"><img src="static/picture/png40.png" alt="" class="i"></div>
+                <div class="t"><span>校园生活</span></div>
+            </div>
+        </a><a href="image.html" target="_blank" class="sidebar-item s3 ">
+            <div class="sidebar-cont">
+                <div class="icon"><img src="static/picture/png139.png" alt="" class="i"></div>
+                <div class="t"><span>融媒体</span></div>
+            </div>
+        </a><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; class="sidebar-item s4 ">
+            <div class="sidebar-cont">
+                <div class="icon"><img src="static/picture/png138.png" alt="" class="i"></div>
+                <div class="t"><span>通知公告</span></div>
+            </div>
+        </a><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; class="sidebar-item s5 ">
+            <div class="sidebar-cont">
+                <div class="icon"><img src="static/picture/png43.png" alt="" class="i"></div>
+                <div class="t"><span>信息公开</span></div>
+            </div>
+        </a><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; class="sidebar-item s6 ">
+            <div class="sidebar-cont">
+                <div class="icon"><img src="static/picture/png44.png" alt="" class="i"></div>
+                <div class="t"><span>网上办事</span></div>
+            </div>
+        </a>    <div class="sidebar-item sidebar-topping s7">
+        <div class="sidebar-cont">
+            <div class="xfont top-icon"><img src="static/picture/png136.png" alt=""></div>
+            <div class="t"><span>返回顶部</span></div>
+        </div>
+    </div>
+</div>
+<div class="sidebar-item s8">
+    <div class="sidebar-cont">
+        <div class="xfont icon-up"></div>
+        <div class="t"><span>收起</span></div>
+    </div>
+</div></div><div class="x-header_new header-fixed">
+    <div class="box-1 p-show">
+        <div class="box1-logo">
+            <div class="box1-bg">
+                <div class="gif-box"><img src="static/picture/png78-1.gif" alt=""></div>
+                <div class="svgbox"></div>
+            </div>
+            <div class="logo-box"><a href=""><img src="static/picture/s61b2fc83b2c57.png" alt="" title="" class="i"></a></div>                        <div class="syx"></div>
+        </div>
+        <div class="box1-top">
+            <div class="x-wrap">
+                <!--<div class="flexbox"><div class="item"><a href="sitemap.html" target="_blank"> 一键直达</a></div><div class="item"><a href="login.html" target="_blank"> 微人大</a></div><div class="item"><a href="index1.html" target="_blank"> 新闻网</a></div><div class="item"><a href="index4.html" target="_blank"> 图书馆</a></div><div class="item"><a href="index5.html" target="_blank"> 邮箱</a></div><div class="item"><a href="index6.html" target="_blank"> 捐赠</a></div><div class="item"><a href="zp_homepage.html" target="_blank"> 招聘</a></div><div class="item ffar"><a href="index7.html" target="_blank"> EN</a></div><div class="item search-mod">-->
+                <div class="flexbox"><div class="item"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; > 一键直达</a></div><div class="item"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; > 微教技</a></div><div class="item"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; > 班日志</a></div><div class="item"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; > 图书馆</a></div><div class="item"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; > 邮箱</a></div><div class="item"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 捐赠</a></div><div class="item"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; > 就业</a></div><div class="item ffar"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; > EN</a></div><div class="item search-mod">
+    <div class="search-tap xicon icon-search"></div>
+    <div class="search-box">
+        <!--<div class="search-txt"><input type="text" class="search-input" placeholder="请输入您要搜索的内容" id="txt_Search2" onkeypress="keydown(event, '#btn_Search2');"></div>-->
+        <!--<div class="search-btn"><button class="search-submit" type="submit" onclick="return false;" id="btn_Search2">搜索</button></div>-->
+        <div class="search-txt"><input type="text" class="search-input" placeholder="请输入您要搜索的内容"  ></div>
+        <div class="search-btn"><button class="search-submit" ><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; >搜索</a></button></div>
+    </div>
+</div></div>            </div>
+        </div>
+        <div class="box1-bot">
+            <div class="x-wrap">
+                <div class="box1-navbox"><div class="nav-item nav-lv1-item " data-id="22">
+        <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>班级概况</a></div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="lv2-cont">
+                        <div class="lv2-lbox">
+                            <div class="lv2-lbox-tit">班级概况</div>
+                            <div class="lv2-lbox-list">
+                                <div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>班级建设</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 现任班委</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 历任班委 </a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>组织建设 </a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>班级标识</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>班级服务</a></div>
+                                    </div>                            </div>
+                        </div>
+                        <div class="lv2-rbox"><div class="p"></div>
+<div class="imgbox">
+    <div class="img"><img src="static/picture/s64f306457b844.jpg" alt="" title="" class="i"></div>
+</div></div>                    </div>
+                </div>
+            </div>    </div><div class="nav-item nav-lv1-item " data-id="138">
+        <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>党团活动</a></div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="lv2-cont">
+                        <div class="lv2-lbox">
+                            <div class="lv2-lbox-tit">党团活动</div>
+                            <div class="lv2-lbox-list">
+                                <div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>党的关怀</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>团日活动</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>红色记忆</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>党员发展</a></div>
+                                    </div>                            </div>
+                        </div>
+                        <div class="lv2-rbox"><div class="p"></div>
+<div class="imgbox">
+    <div class="img"><img src="static/picture/s64eabc21ccf7d.jpg" alt="" title="" class="i"></div>
+</div></div>                    </div>
+                </div>
+            </div>    </div><div class="nav-item nav-lv1-item " data-id="99999999">
+        <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>新思想学习</a></div>
+            </div><div class="nav-item nav-lv1-item " data-id="23">
+        <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>教育教学</a></div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="lv2-cont">
+                        <div class="lv2-lbox">
+                            <div class="lv2-lbox-tit">教育教学</div>
+                            <div class="lv2-lbox-list">
+                                <div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>师资队伍</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 教育管理 </a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>课程设置 </a></div>
+                                    </div>                            </div>
+                        </div>
+                        <div class="lv2-rbox"><div class="p"></div>
+<div class="imgbox">
+    <div class="img"><img src="static/picture/s64eabcd63e119.jpg" alt="" title="" class="i"></div>
+</div></div>                    </div>
+                </div>
+            </div>    </div><div class="nav-item nav-lv1-item " data-id="71">
+        <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>班级管理</a></div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="lv2-cont">
+                        <div class="lv2-lbox">
+                            <div class="lv2-lbox-tit">班级管理</div>
+                            <div class="lv2-lbox-list">
+                                <div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>学习帮扶小组</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>综测小组</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>贫困生评选小组</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>摄影小组 </a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>团小组 </a></div>
+                                    </div>                           </div>
+                        </div>
+                        <div class="lv2-rbox"><div class="p"></div>
+<div class="imgbox">
+    <div class="img"><img src="static/picture/s64eabfda5f12c.jpg" alt="" title="" class="i"></div>
+</div></div>                    </div>
+                </div>
+            </div>    </div><div class="nav-item nav-lv1-item " data-id="73">
+        <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>学科竞赛</a></div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="lv2-cont">
+                        <div class="lv2-lbox">
+                            <div class="lv2-lbox-tit">学科竞赛</div>
+                            <div class="lv2-lbox-list">
+                                <div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>互联网+</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>挑战杯</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>计算机设计大赛</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>大学生英语竞赛</a></div>
+                                    </div>                            </div>
+                        </div>
+                        <div class="lv2-rbox"><div class="p"></div>
+<div class="imgbox">
+    <div class="img"><img src="static/picture/s64eac0190e3fb.jpg" alt="" title="" class="i"></div>
+</div></div>                    </div>
+                </div>
+            </div>    </div><div class="nav-item nav-lv1-item " data-id="88">
+        <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>考研就业</a></div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="lv2-cont">
+                        <div class="lv2-lbox">
+                            <div class="lv2-lbox-tit">考研就业</div>
+                            <div class="lv2-lbox-list">
+                                <div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>推免生介绍</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>考研慰问</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>就业招聘</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>暑期学校</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 就业服务</a></div>
+                                    </div>                            </div>
+                        </div>
+                        <div class="lv2-rbox"><div class="p"></div>
+<div class="imgbox">
+    <div class="img"><img src="static/picture/s64eac051e9418.jpg" alt="" title="" class="i"></div>
+</div></div>                    </div>
+                </div>
+            </div>    </div><div class="nav-item nav-lv1-item " data-id="58">
+        <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>合作交流</a></div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="lv2-cont">
+                        <div class="lv2-lbox">
+                            <div class="lv2-lbox-tit">合作交流</div>
+                            <div class="lv2-lbox-list">
+                                <div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>专业交流</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>学院交流</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>班企合作</a></div>
+                                    </div>                         </div>
+                        </div>
+                        <div class="lv2-rbox"><div class="p"></div>
+<div class="imgbox">
+    <div class="img"><img src="static/picture/s64eac084b090b.jpg" alt="" title="" class="i"></div>
+</div></div>                    </div>
+                </div>
+            </div>    </div><div class="nav-item nav-lv1-item " data-id="66">
+        <div class="nav-tit nav-lv1-tit"><a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>校园生活</a></div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="lv2-cont">
+                        <div class="lv2-lbox">
+                            <div class="lv2-lbox-tit">校园生活</div>
+                            <div class="lv2-lbox-list">
+                                <div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>学生活动</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link"href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>教师之家</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="image.html" target="_blank">班级影像</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>校历</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>校园地图</a></div>
+                                    </div><div class="nav-item nav-lv2-item">
+                                        <div class="nav-tit nav-lv2-tit"><a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>黄页</a></div>
+                                    </div>                            </div>
+                        </div>
+                        <div class="lv2-rbox"><div class="p"></div>
+<div class="imgbox">
+    <div class="img"><img src="static/picture/s64eac0bd638e8.jpg" alt="" title="" class="i"></div>
+</div></div>                    </div>
+                </div>
+            </div>    </div></div>            </div>
+        </div>
+    </div>
+
+    <div class="box-2">
+        <div class="nav-mod">
+            <div class="x-wrap">
+                <div class="search-box m-show">
+                    <div class="search-txt"><input type="text" class="search-input" placeholder="请输入您要搜索的内容"  ></div>
+                    <div class="search-btn"><button class="search-submit" ><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; >搜索</a></button></div>
+                </div>
+                <div class="nav-box"><div class="nav-item nav-lv1-item" data-id="22">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>班级概况</a>
+            <div class="arr xicon icon-down"></div>        </div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>班级建设</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 现任班委</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 历任班委 </a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>组织建设 </a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>班级标识</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>班级服务</a>
+                            </div>
+                        </div>                </div>
+            </div>    </div>
+    <div class="nav-item nav-lv1-item" data-id="138">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>党团活动</a>
+            <div class="arr xicon icon-down"></div>        </div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>党的关怀</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>团日活动</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>红色记忆</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>党员发展</a>
+                            </div>
+                        </div>                </div>
+            </div>    </div>
+    <div class="nav-item nav-lv1-item" data-id="99999999">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>新思想学习</a>
+                    </div>
+            </div>
+    <div class="nav-item nav-lv1-item" data-id="23">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>教育教学</a>
+            <div class="arr xicon icon-down"></div>        </div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>师资队伍</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 教育管理 </a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>课程设置 </a>
+                            </div>
+                        </div>                </div>
+            </div>    </div>
+    <div class="nav-item nav-lv1-item" data-id="71">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>班级管理</a>
+            <div class="arr xicon icon-down"></div>        </div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>学习帮扶小组</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>综测小组</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>贫困生评选小组</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>摄影小组 </a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>团小组 </a>
+                            </div>
+                        </div>               </div>
+            </div>    </div>
+    <div class="splite"></div><div class="nav-item nav-lv1-item" data-id="73">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>学科竞赛</a>
+            <div class="arr xicon icon-down"></div>        </div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>互联网+</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>挑战杯</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>计算机设计大赛</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>大学生英语竞赛</a>
+                            </div>
+                        </div>                </div>
+            </div>    </div>
+    <div class="nav-item nav-lv1-item" data-id="88">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>考研就业</a>
+            <div class="arr xicon icon-down"></div>        </div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>推免生介绍</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>考研慰问</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>就业招聘</a>
+                            </div>
+                        </div>               </div>
+            </div>    </div>
+    <div class="nav-item nav-lv1-item" data-id="58">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>合作交流</a>
+            <div class="arr xicon icon-down"></div>        </div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>专业交流</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>学院交流</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>班企合作</a>
+                            </div>
+                        </div>            </div>
+            </div>    </div>
+    <div class="nav-item nav-lv1-item" data-id="66">
+        <div class="nav-tit nav-lv1-tit">
+            <a class="nav-link nav-lv1-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>校园生活</a>
+            <div class="arr xicon icon-down"></div>        </div>
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>学生活动</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>教师之家</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="image.html" target="_blank">班级影像</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>校历</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>校园地图</a>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <a class="nav-link nav-lv2-link" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>黄页</a>
+                            </div>
+                        </div>                </div>
+            </div>    </div>
+    <div class="nav-item search-mod p-show">
+	<div class="search-tap xicon icon-search"></div>
+	<div class="search-box">
+	 <!-- <div class="search-txt"><input type="text" class="search-input" placeholder="请输入您要搜索的内容" id="txt_Search3" onkeypress="keydown(event, '#btn_Search3');"></div>
+	  <div class="search-btn"><button class="search-submit" type="submit" onclick="return false;" id="btn_Search3">搜索</button></div>-->
+      <div class="search-txt"><input type="text" class="search-input" placeholder="请输入您要搜索的内容"  ></div>
+      <div class="search-btn"><button class="search-submit" ><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; >搜索</a></button></div>
+    </div>
+</div>
+<script type="text/javascript">
+    //一级高亮
+    var nowurl = ( "" != 'javascript:void(0);' ) ? "" : window.location.pathname;
+    var _nowurl = "";
+    $('.box1-navbox .nav-lv1-item').each(function(){
+        var ornow = $(this).find('a').attr('href');
+        var category_parent = $(this).data('id');
+        if(ornow == nowurl || category_parent=="" || category_parent == ""){
+            $(this).addClass('cur').siblings().removeClass('cur');
+        };
+    });
+    $('.box-2 .nav-box .nav-lv1-item').each(function(){
+        var ornow = $(this).find('a').attr('href');
+        var category_parent = $(this).data('id');
+        if(ornow == nowurl || category_parent=="" || category_parent == ""){
+            $(this).addClass('cur').siblings().removeClass('cur');
+        };
+    });
+</script>
+<script type="text/javascript">
+    $('#btn_Search3').click(function(){
+        var keywords = $("#txt_Search3").val();
+        if(keywords == ''){
+            my_alert("请输入关键字");
+            return false;
+        }
+        var tit = "";
+        if(tit=="搜索结果"){
+            window.location.href = "/searchs/keywords/" + encodeURI(keywords);
+        }else{
+            window.open("/searchs/keywords/" + encodeURI(keywords),null);
+        }
+    });
+</script></div>                <div class="bottom">
+                    <div class="tools-mod"><a class="tools-item" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 一键直达</a><a class="tools-item" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 微教技</a><a class="tools-item" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 班日志</a><a class="tools-item" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 图书馆</a><a class="tools-item" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 邮箱</a><a class="tools-item" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 捐赠</a><a class="tools-item" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> 就业</a><a class="tools-item lang" href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";> EN</a></div>                </div>
+            </div>
+        </div>
+        <div class="x-wrap slogan-wrap">
+            <div class="slogan"></div>
+        </div>
+        <div class="menu-mod">
+            <div class="box-2-logobox">
+                <div class="logo"><a href=""><img src="static/picture/s61b2fc83b2c57.png" alt="" title="" class="i"></a>
+<div class="syx"></div></div>            </div>
+            <div class="menu-btn"><span class="line"></span></div>
+        </div>
+
+    </div>
+</div>
+<style>
+    .logo-box .widget-area-edit{top: 0px}
+    .logo .widget-area-edit{top: 0px}
+</style>
+<script>
+    var p=1;
+    $(function(){
+        $('#btn_Search').click(function(){
+            var keywords = $("#txt_Search").val();
+                if(keywords == ''){
+                    my_alert("请输入关键字");
+                    return false;
+                }
+                var tit = "";
+                if(tit=="搜索结果"){
+                    window.location.href = "/searchs/keywords/" + encodeURI(keywords);
+                }else{
+                    window.open("/searchs/keywords/" + encodeURI(keywords),null);
+                }
+        });
+        $('#btn_Search2').click(function(){
+            var keywords = $(document).find("#txt_Search2").val();
+                if(keywords == ''){
+                    my_alert("请输入关键字");
+                    return false;
+                }
+                var tit = "";
+                if(tit=="搜索结果"){
+                    window.location.href = "/searchs/keywords/" + encodeURI(keywords);
+                }else{
+                    window.open("/searchs/keywords/" + encodeURI(keywords),null);
+                }
+        });
+    })
+    function keydown(e, but) {
+        var currKey=0,e=e||event;
+        var _this = $(but);
+        if(e.keyCode==13)
+        {
+            _this.click();
+            return false;
+        }
+    }
+</script>
+            <div class="demo1 x-show">
+	<div class="pop-close xicon icon-close"></div>
+	<div class="pop-cont">
+		<div class="h">留言板</div>
+		<div class="cookie">
+			<div class="desc">
+				<div class="p">欢迎来到安徽师范大学教育科学学院教育技术学专业2020级1班，访问期间如有任何问题建议请联系我们，我们将积极妥善地为您解决。</div>			</div>
+			<a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";><div class="sub">留言</div></a>
+		</div>
+	</div>
+</div>
+<div class="x-container">
+	<div class="new_home1">
+		<div class="frame-box"><div class="frame">
+                <div class="child">
+                <div class="bg p-show" style="background-image: url(static/image/s652d08f18e5f1_1485_762_221_0.png);"></div>
+                <div class="bg m-show" style="background-image: url(static/image/s652d08218f0dc.png);"></div>
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.1);"></div>
+                <!--<a class="a" href="84257.html" target="_blank"></a>-->
+            </div>            <div class="child">
+                <div class="bg p-show" style="background-image: url(static/image/s64fd45c493eb8.png);"></div>
+                <div class="bg m-show" style="background-image: url(static/image/s64fd478456e32.png);"></div>
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.1);"></div>
+               <!--<a class="a" href="80233.html" target="_blank"></a>-->
+            </div>            <div class="child">
+                <div class="bg p-show" style="background-image: url(static/image/s64f3dba540d94.png);"></div>
+                <div class="bg m-show" style="background-image: url(static/image/s64f1b09f813f6.png);"></div>
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.1);"></div>
+                <!--<a class="a" style="cursor:default"></a>-->
+            </div>            <div class="child">
+                <div class="bg p-show" style="background-image: url(static/image/s64f1360727e33.jpg);"></div>
+                <div class="bg m-show" style="background-image: url(static/image/s64f1b2c166ff9.jpg);"></div>
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.1);"></div>
+                <!--<a class="a" href="20230403zhutijiaoyu.html" target="_blank"></a>-->
+            </div></div>
+<div class="banner-pro"></div>
+<div class="banner-tools">
+    <div class="banner-btn"></div>
+    <div class="nav"></div>
+</div></div>		<div class="banner-map">
+			<div class="item"><div class="line"></div>
+<div class="img"><img class="i" src="static/picture/png74.png" alt=""></div>
+<!-- 需要默认选中给item-link 加类名 on 不需要忽略-->
+<div class="item-menubox">
+    <div class="item-menu">
+        <div class="pad">
+            <div class="item-link"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>一键直达</a></div><div class="item-link"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>校园生活</a></div><div class="item-link"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')"; >融媒体</a></div><div class="item-link"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>通知公告</a></div><div class="item-link"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>信息公开</a></div><div class="item-link"><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>网上办事</a></div>        </div>
+    </div>
+</div></div>			<div class="item"><div class="line"></div>
+<div class="img">
+    <a href="datas.html">
+        <img class="i" src="static/picture/png75.png" alt="">
+    </a>
+</div></div>			<div class="item"><div class="line"></div>
+<div class="img">
+    <a href="image.html">
+        <img class="i" src="static/picture/png76.png" alt="">
+    </a>
+</div></div>		</div>
+	</div>
+	<div class="new_home2">
+		<div class="n-wrap">
+			<div class="new_title"><div class="h">专业 · 班级 · 新闻</div>
+<div class="icon-box"><div class="icon"></div></div>
+<div class="t">讲好教技故事</div></div>						<div class="box1  p-show"><div class="l transR">
+    <div class="l_top">
+        <div class="item">
+                <a href="https://www.ahnu.edu.cn/info/1104/58950.htm" target="_blank">
+                    <div class="img">
+                        <img class="i" src="static/picture/s65321aafa7fb5_1455_806_131_19.png" alt="" title="">
+                        <div class="mask" style="background: rgba(0, 0, 0, 0);"></div>
+                    </div>
+                    <div class="t"><div class="n">教育科学学院学子在2023年中国计算机设计大赛中喜获佳绩</div></div>
+                </a>
+            </div>    </div>
+    <div class="l_bottom">
+        <div class="item"><a href="https://edu.ahnu.edu.cn/info/1057/11428.htm" target="_blank"><div class="n">教育技术学专业顺利完成师范专业认证专家进校考查工作</div></a></div><div class="item"><a href="https://edu.ahnu.edu.cn/info/1057/11655.htm" target="_blank"><div class="n">教育技术学教工党支部赴春谷3D打印园开展“行走的实践课堂”系列活动</div></a></div>    </div>
+</div>
+<div class="r transR td2">
+    <div class="item">
+            <a href="https://edu.ahnu.edu.cn/info/1057/11640.htm" target="_blank"><div class="n">教育技术学团队在2023年中国大学生计算机设计大赛中取得双突破</div></a>
+        </div><div class="item">
+            <a href="https://edu.ahnu.edu.cn/info/1057/11430.htm" target="_blank"><div class="n">陶佳副教授做客第二十七期“教授友约”</div></a>
+        </div><div class="item">
+            <a href="https://edu.ahnu.edu.cn/info/1057/11684.htm" target="_blank"><div class="n">【师风师德先进典型】席鹏：倾心教学重实效 扎实工作助发展</div></a>
+        </div><div class="item">
+            <a href="https://edu.ahnu.edu.cn/info/1057/10639.htm" target="_blank"><div class="n">【师德师风先进典型】陶佳：务实创新求发展，倾心育人谱新篇</div></a>
+        </div><div class="item">
+            <a href="https://edu.ahnu.edu.cn/info/1057/11682.htm" target="_blank"><div class="n">【师德师风先进典型】杨滨：不忘初心，教书育人，赓续前行，服务社会</div></a>
+        </div><div class="item">
+            <a href="https://edu.ahnu.edu.cn/info/1057/10640.htm" target="_blank"><div class="n">【师德师风先进典型】肖文：争做新时代“四有”好教师</div></a>
+        </div></div></div>				<div class="box1  m-show"><div class="item item-img">
+        <a href="https://www.ahnu.edu.cn/info/1104/58950.htm" target="_blank">
+            <div class="img">
+                <img class="i" src="static/picture/s65321aafa7fb5_1455_806_131_19.png" alt="" title="">
+                <div class="mask" style="background: rgba(0, 0, 0, 0);"></div>
+            </div>
+            <div class="t"><div class="n"></div></div>
+        </a>
+    </div><div class="item">
+        <a href="https://edu.ahnu.edu.cn/info/1057/11640.htm" target="_blank"><div class="n">教育技术学团队在2023年中国大学生计算机设计大赛中取得双突破</div></a>
+    </div><div class="item">
+        <a href="https://edu.ahnu.edu.cn/info/1057/11430.htm" target="_blank"><div class="n">陶佳副教授做客第二十七期“教授友约”</div></a>
+    </div><div class="item">
+        <a href="https://edu.ahnu.edu.cn/info/1057/11655.htm" target="_blank"><div class="n">教育技术学教工党支部赴春谷3D打印园开展“行走的实践课堂”系列活动</div></a>
+    </div><div class="item">
+        <a href="https://edu.ahnu.edu.cn/info/1057/11684.htm" target="_blank"><div class="n">【师风师德先进典型】席鹏：倾心教学重实效 扎实工作助发展</div></a>
+    </div><div class="item">
+        <a href="https://edu.ahnu.edu.cn/info/1057/10639.htm" target="_blank"><div class="n">师德师风先进典型】陶佳：务实创新求发展，倾心育人谱新篇</div></a>
+    </div><div class="item">
+        <a href="https://edu.ahnu.edu.cn/info/1057/11682.htm" target="_blank"><div class="n">【师德师风先进典型】杨滨：不忘初心，教书育人，赓续前行，服务社会</div></a>
+    </div><div class="item">
+        <a href="https://edu.ahnu.edu.cn/info/1057/10640.htm" target="_blank"><div class="n">【师德师风先进典型】肖文：争做新时代“四有”好教师</div></a>
+    </div><div class="item">
+        <a href="https://edu.ahnu.edu.cn/info/1059/11305.htm" target="_blank"><div class="n">教育技术专业举行2020级考研就业交流会</div></a>
+    </div><div class="item">
+        <a href="https://edu.ahnu.edu.cn/info/1059/11698.htm" target="_blank"><div class="n">教育技术专业召开2020级本科生教育实习动员培训会</div></a>
+    </div></div>						<div class="box2"><div class="li cur">
+        <div class="l-t" style="background-color: #7c3030;">
+            <div class="t"><a>学习贯彻习近平新时代<br>中国特色社会主义思想<br>主题教育</a></div>
+        </div>
+        <div class="bg" style="background-image: url(static/image/s64cb56b903c0d.png);"><a></a></div>
+    </div><div class="li ">
+        <div class="l-t" style="background-image: url(static/image/jpg43.jpg);">
+            <div class="t"><a>振兴师大教技先行</a></div>
+        </div>
+        <div class="bg" style="background-image: url(static/image/s64cb56c275e24.png);"></div>
+    </div><div class="li ">
+        <div class="l-t" style="background-image: url(static/image/jpg42.jpg);">
+            <div class="t"><a>政治嘱托 新路答卷</a></div>
+        </div>
+        <div class="bg" style="background-image: url(static/image/s64b64ab6f2fd9.png);"><a></a></div>
+    </div><div class="li ">
+        <div class="l-t" style="background-color: #b52e40;">
+            <div class="t"><a>深入学习宣传贯彻<br>党的二十大精神</a></div>
+        </div>
+        <div class="bg" style="background-image: url(static/image/s64ab9d586c149.png);"><a></a></div>
+    </div><div class="li ">
+        <div class="l-t" style="background-color: #a80925;">
+            <div class="t"><a>教育技术学第一次党员会议</a></div>
+        </div>
+        <div class="bg" style="background-image: url(static/image/s64b64ac605b54.png);"><a></a></div>
+    </div><div class="li ">
+        <div class="l-t" style="background-color: #c77447;">
+            <div class="t"><a>教技欢迎你</a></div>
+        </div>
+        <div class="bg" style="background-image: url(static/image/s64b64acf68486.png);"><a></a></div>
+    </div></div>			<div class="morebox" style="min-height:30px;min-width:20px"><a class="new_more">
+        <div class="icon"></div>
+        <div class="t">进入新闻网</div>
+    </a></div>			<div class="nh_line"></div>
+		</div>
+	</div>
+
+	<div class="new_home7">
+		<div class="n-wrap">
+			<div class="new_title">
+				<div class="h">崇德 · 树人</div>				<div class="icon-box"><div class="icon"></div></div>
+				<div class="t">为党育人、为国育才</div>			</div>
+			<div class="cont"><div class="line-box">
+    <div class="slick-mod line-1">
+        <div class="slick-item"><img src="static/picture/png128.png" alt=""></div>
+        <div class="slick-item"><img src="static/picture/png128.png" alt=""></div>
+    </div>
+    <div class="slick-mod line-2">
+        <div class="slick-item"><img src="static/picture/png129.png" alt=""></div>
+        <div class="slick-item"><img src="static/picture/png129.png" alt=""></div>
+    </div>
+    <div class="slick-mod line-3">
+        <div class="slick-item"><img src="static/picture/png130.png" alt=""></div>
+        <div class="slick-item"><img src="static/picture/png130.png" alt=""></div>
+    </div>
+</div>
+<div class="list scrollme">
+    <div class="item animateme" data-when="view" data-from="0.3" data-to="0.05" data-scale="0">
+            <a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>
+                <div class="img" style="background-image: url(static/image/png117-1.png);">
+                    <img src="static/picture/s64803549f2853.png" title="" alt="" class="i">
+                    <div class="mask"></div>
+                </div>
+                <div class="txt-box">
+                    <div class="t1">中共（含预备）党员</div>
+                    <div class="t2"></div>
+                </div>
+            </a>
+        </div><div class="item animateme" data-when="view" data-from="0.4" data-to="0.1" data-scale="0">
+            <a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>
+                <div class="img" style="background-image: url(static/image/png118-1.png);">
+                    <img src="static/picture/s64803e1fcb5b6.png" title="" alt="" class="i">
+                    <div class="mask"></div>
+                </div>
+                <div class="txt-box">
+                    <div class="t1">入党积极分子</div>
+                    <div class="t2"></div>
+                </div>
+            </a>
+        </div><div class="item animateme" data-when="view" data-from="0.5" data-to="0.15" data-scale="0">
+            <a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>
+                <div class="img" style="background-image: url(static/image/png119-1.png);">
+                    <img src="static/picture/s64803c700c522.png" title="" alt="" class="i">
+                    <div class="mask"></div>
+                </div>
+                <div class="txt-box">
+                    <div class="t1">团员</div>
+                    <div class="t2"></div>
+                </div>
+            </a>
+        </div></div></div>		</div>
+	</div>
+
+	
+	<div class="fc-calendar-container calendar" id="calendar" style="display: none;"></div>
+	
+
+	<div class="new_home6">
+		<div class="n-wrap">
+			<div class="new_title">
+				<div class="h">博学 · 发展</div>				<div class="icon-box"><div class="icon"></div></div>
+				<div class="t">落实“五育并举”教育理念</div>			</div>
+			<div class="cont">
+				<div class="tabs transR">
+					<div class="item"><div class="bg">
+    <div class="be bg-item"></div>
+    <div class="af bg-item"></div>
+</div>
+<div class="ipd">
+    <div class="icon">
+        <img class="i i1" src="static/picture/png98.png" alt="">
+        <img class="i i2" src="static/picture/png98-1.png" alt="">
+    </div>
+    <div class="t">思想引领</div>
+</div>
+<a style="cursor:default"></a>
+<div class="line"></div></div>					<div class="item"><div class="bg">
+    <div class="be bg-item"></div>
+    <div class="af bg-item"></div>
+</div>
+<div class="ipd">
+    <div class="icon">
+        <img class="i i1" src="static/picture/png99.png" alt="">
+        <img class="i i2" src="static/picture/png99-1.png" alt="">
+    </div>
+    <div class="t">社会实践</div>
+</div>
+<a style="cursor:default"></a>
+<div class="line"></div></div>					<div class="item"><div class="bg">
+    <div class="be bg-item"></div>
+    <div class="af bg-item"></div>
+</div>
+<div class="ipd">
+    <div class="icon">
+        <img class="i i1" src="static/picture/png100.png" alt="">
+        <img class="i i2" src="static/picture/png100-1.png" alt="">
+    </div>
+    <div class="t">文体活动</div>
+</div>
+<a style="cursor:default"></a>
+<div class="line"></div></div>					<div class="item"><div class="bg">
+    <div class="be bg-item"></div>
+    <div class="af bg-item"></div>
+</div>
+<div class="ipd">
+    <div class="icon">
+        <img class="i i1" src="static/picture/png101.png" alt="">
+        <img class="i i2" src="static/picture/png101-1.png" alt="">
+    </div>
+    <div class="t">志愿服务</div>
+</div>
+<a style="cursor:default"></a>
+<div class="line"></div></div>					<div class="item"><div class="bg">
+    <div class="be bg-item"></div>
+    <div class="af bg-item"></div>
+</div>
+<div class="ipd">
+    <div class="icon">
+        <img class="i i1" src="static/picture/png102.png" alt="">
+        <img class="i i2" src="static/picture/png102-1.png" alt="">
+    </div>
+    <div class="t">学生社团</div>
+</div>
+<a style="cursor:default"></a>
+<div class="line"></div></div>				</div>
+				<div class="dr">
+					<div class="list transTs"><div class="item">
+        <div class="pic"><img src="static/picture/s64376fec71752_594_440_-2_0.png" title="" alt="" class="i"><div class="mask" style="background-color: rgba(0, 0, 0, 0);"></div></div>
+        <div class="text">
+            <div class="h"></div>
+            <div class="new_more w">
+                <div class="icon"></div>
+            </div>
+        </div>
+            </div><div class="item">
+        <div class="pic"><img src="static/picture/s643b85973b190.jpg" title="" alt="" class="i"><div class="mask" style="background-color: rgba(0, 0, 0, 0);"></div></div>
+        <div class="text">
+            <div class="h"></div>
+            <div class="new_more w">
+                <div class="icon"></div>
+            </div>
+        </div>
+            </div><div class="item">
+        <div class="pic"><img src="static/picture/s6438b60aea9a9.png" title="" alt="" class="i"><div class="mask" style="background-color: rgba(0, 0, 0, 0);"></div></div>
+        <div class="text">
+            <div class="h"></div>
+            <div class="new_more w">
+                <div class="icon"></div>
+            </div>
+        </div>
+            </div></div>					<div class="list"><div class="item">
+        <div class="pic"><img src="static/picture/s64f2c3face1ed.jpg" title="" alt="" class="i"><div class="mask" style="background-color: rgba(0, 0, 0, 0);"></div></div>
+        <div class="text">
+            <div class="h"></div>
+            <div class="new_more w">
+                <div class="icon"></div>
+            </div>
+        </div>
+            </div><div class="item">
+        <div class="pic"><img src="static/picture/s64f2c1bda6a25.jpg" title="1" alt="11" class="i"><div class="mask" style="background-color: rgba(0, 0, 0, 0);"></div></div>
+        <div class="text">
+            <div class="h"></div>
+            <div class="new_more w">
+                <div class="icon"></div>
+            </div>
+        </div>
+            </div><div class="item">
+        <div class="pic"><img src="static/picture/s64edbb76ccac3_2670_1976_0_210.jpg" title="" alt="" class="i"><div class="mask" style="background-color: rgba(0, 0, 0, 0);"></div></div>
+        <div class="text">
+            <div class="h"></div>
+            <div class="new_more w">
+                <div class="icon"></div>
+            </div>
+        </div>
+            </div></div>					<div class="list"><div class="item">
+        <div class="pic"><img src="static/picture/s643b85d058b1b.jpg" title="" alt="" class="i"><div class="mask" style="background-color: rgba(0, 0, 0, 0);"></div></div>
+        <div class="text">
+            <div class="h"></div>
+            <div class="new_more w">
+                <div class="icon"></div>
+            </div>
+        </div>
+            </div><div class="item">
+        <div class="pic"><img src="static/picture/s643b85db5ac4f.jpg" title="" alt="" class="i"><div class="mask" style="background-color: rgba(0, 0, 0, 0);"></div></div>
+        <div class="text">
+            <div class="h"></div>
+            <div class="new_more w">
+                <div class="icon"></div>
+            </div>
+        </div>
+            </div><div class="item">
+        <div class="pic"><img src="static/picture/s643b85e4a5261.jpg" title="" alt="" class="i"><div class="mask" style="background-color: rgba(0, 0, 0, 0);"></div></div>
+        <div class="text">
+            <div class="h"></div>
+            <div class="new_more w">
+                <div class="icon"></div>
+            </div>
+        </div>
+            </div></div>					<div class="list"><div class="item">
+        <div class="pic"><img src="static/picture/s643b85f612951.jpg" title="" alt="" class="i"><div class="mask" style="background-color: rgba(0, 0, 0, 0);"></div></div>
+        <div class="text">
+            <div class="h"></div>
+            <div class="new_more w">
+                <div class="icon"></div>
+            </div>
+        </div>
+            </div><div class="item">
+        <div class="pic"><img src="static/picture/s643b8601b4d94.jpg" title="" alt="" class="i"><div class="mask" style="background-color: rgba(0, 0, 0, 0);"></div></div>
+        <div class="text">
+            <div class="h"></div>
+            <div class="new_more w">
+                <div class="icon"></div>
+            </div>
+        </div>
+            </div><div class="item">
+        <div class="pic"><img src="static/picture/s643b860a48f94.jpg" title="" alt="" class="i"><div class="mask" style="background-color: rgba(0, 0, 0, 0);"></div></div>
+        <div class="text">
+            <div class="h"></div>
+            <div class="new_more w">
+                <div class="icon"></div>
+            </div>
+        </div>
+            </div></div>					<div class="list"><div class="item">
+        <div class="pic"><img src="static/picture/s64f1878f45ee4_1080_800_0_0.jpg" title="" alt="" class="i"><div class="mask" style="background-color: rgba(0, 0, 0, 0);"></div></div>
+        <div class="text">
+            <div class="h"></div>
+            <div class="new_more w">
+                <div class="icon"></div>
+            </div>
+        </div>
+            </div><div class="item">
+        <div class="pic"><img src="static/picture/s64f187976fa32.png" title="" alt="" class="i"><div class="mask" style="background-color: rgba(0, 0, 0, 0);"></div></div>
+        <div class="text">
+            <div class="h"></div>
+            <div class="new_more w">
+                <div class="icon"></div>
+            </div>
+        </div>
+            </div><div class="item">
+        <div class="pic"><img src="static/picture/s64edbdd11f6ce.jpg" title="" alt="" class="i"><div class="mask" style="background-color: rgba(0, 0, 0, 0);"></div></div>
+        <div class="text">
+            <div class="h"></div>
+            <div class="new_more w">
+                <div class="icon"></div>
+            </div>
+        </div>
+            </div></div>				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="new_home3">
+		<div class="n-wrap">
+			<div class="new_title">
+				<div class="h">笃行 · 实践</div>				<div class="icon-box"><div class="icon"></div></div>
+				<div class="t">在青春的赛道上奋力奔跑</div>			</div>
+			<div class="cont"><div class=" l-box transT">
+        <div class="img-box">
+            <div class="bg"></div>
+            <div class="img">
+               <!-- <a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";><img src="static/picture/s64f2c3a9d3164.jpg" title="" alt="" class="i"></a>-->
+                <a><img src="static/picture/s64f2c3a9d3164.jpg" title="" alt="" class="i"></a>
+            </div>
+        </div>
+        <div class="txt-box">
+            <!--<a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>-->
+            <a>
+                <div class="l-t">2020级教育技术学1班在第十六届中国大学生计算机设计大赛中取得突破</div>
+                <div class="p">在学校和学院的大力支持下，2020级教育技术学1班紧紧围绕“以赛促学、以赛促教、以赛促创”的产出导向育人理念，以中国大学生计算机设计大赛等及其它各类大赛为抓手，用数字化续写创新创业新成果。</div>
+            </a>
+        </div>
+    </div><div class=" r-box transB">
+        <div class="img-box">
+            <div class="bg"></div>
+            <div class="img">
+                <!--<a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";><img src="static/picture/s64f13c4c91e1a_1320_989_0_124.png" title="" alt="" class="i"></a>-->
+                <a><img src="static/picture/s64f13c4c91e1a_1320_989_0_124.png" title="" alt="" class="i"></a>
+            </div>
+        </div>
+        <div class="txt-box">
+            <!--<a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>-->
+                <a>
+                <div class="l-t">笃行创新创业，践行实践创新</div>
+                <div class="p">班级同学踊跃参加大学生创新创业训练项目，其中国家级立项2项，省级立项若干。现已有创业项目建立实体公司，落户在国家小微企业双创示范基地和第一批全国科普教育基地。</div>
+            </a>
+        </div>
+    </div></div>			<div class="morebox" style="min-height:30px;min-width:20px"></div>		</div>
+	</div>
+
+
+	<div class="new_home8">
+		<div class="n-wrap">
+			<div class="new_title">
+				<div class="h">创新 · 特色</div>				<div class="icon-box"><div class="icon"></div></div>
+				<div class="t">传播班级声音</div>			</div>
+			<div class="cont"><div class="list">
+    <div class="li">
+            <div class="zs"></div>
+            <a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>
+                <div class="imgbox">
+                    <div class="img i1"><img src="static/picture/s6438bd7fad1f1.png" title="" alt="" class="i"></div>
+                    <div class="img i2"><img src="static/picture/s6438bd7fad1f1.png" title="" alt="" class="i"></div>
+                </div>
+                <div class="tbox">
+                    <div class="t">“教育科学学院20级教育技术学专业1班”今日校园校园号建设</div>
+                </div>
+            </a>
+        </div><div class="li">
+            <div class="zs"></div>
+            <a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>
+                <div class="imgbox">
+                    <div class="img i1"><img src="static/picture/s643cf90d2812f.png" title="" alt="" class="i"></div>
+                    <div class="img i2"><img src="static/picture/s643cf90d2812f.png" title="" alt="" class="i"></div>
+                </div>
+                <div class="tbox">
+                    <div class="t">“发现优点”心理建设活动第八期</div>
+                </div>
+            </a>
+        </div><div class="li">
+            <div class="zs"></div>
+            <a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>
+                <div class="imgbox">
+                    <div class="img i1"><img src="static/picture/s6437b8ab64568.png" title="" alt="" class="i"></div>
+                    <div class="img i2"><img src="static/picture/s6437b8ab64568.png" title="" alt="" class="i"></div>
+                </div>
+                <div class="tbox">
+                    <div class="t">“流浪飞机”放飞烦恼</div>
+                </div>
+            </a>
+        </div></div></div>		</div>
+	</div>
+</div>
+<div id="datalist2" style="display: none"></div>
+<style>
+	.item .widget-area-edit{top: 0px}
+</style>
+<div id="datalist3" style="display: none">111</div>
+<script>
+	"use strict";
+	var search = {
+		// 不设置category_id会出错
+		// category_id:'',
+		tpl_file : 'index2',
+		pagesize : 9999,
+		p:1
+	};
+	var biao = {};
+	$('#data .item').each( function( i, o ) {
+		if( biao[$(this).attr('da-year')] ) {
+			if( biao[$(this).attr('da-year')].indexOf("class='a'") > -1 && biao[$(this).attr('da-year')].indexOf("class='b'") > -1 ) {
+				if( $(this).attr('da-biao') != 168 && $(this).attr('da-biao') != 169 && $(this).attr('da-biao') == 170 ) {
+					biao[$(this).attr('da-year')] = "<span class='a'></span><span class='b'></span><span class='c'></span>";
+				}
+			} else if( biao[$(this).attr('da-year')].indexOf("class='a'") > -1 && biao[$(this).attr('da-year')].indexOf("class='c'") > -1 ) {
+				if( $(this).attr('da-biao') != 168 && $(this).attr('da-biao') != 170 && $(this).attr('da-biao') == 169 ) {
+					console.log( $(this).attr('da-year')+'-'+$(this).attr('da-biao'))
+					biao[$(this).attr('da-year')] = "<span class='a'></span><span class='b'></span><span class='c'></span>";
+				}
+			} else if( biao[$(this).attr('da-year')].indexOf("class='b'") > -1 && biao[$(this).attr('da-year')].indexOf("class='c'") > -1 ) {
+				if( $(this).attr('da-biao') != 169 && $(this).attr('da-biao') != 170 && $(this).attr('da-biao') == 168 ) {
+					biao[$(this).attr('da-year')] = "<span class='a'></span><span class='b'></span><span class='c'></span>";
+				}
+			} else if( biao[$(this).attr('da-year')].indexOf("class='a'") > -1 ) {
+				if( $(this).attr('da-biao') != 168 && $(this).attr('da-biao') == 169 ) {
+					biao[$(this).attr('da-year')] = "<span class='a'></span><span class='b'></span>";
+				}
+				if( $(this).attr('da-biao') != 168 && $(this).attr('da-biao') == 170 ) {
+					biao[$(this).attr('da-year')] = "<span class='a'></span><span class='c'></span>";
+				}
+			} else if( biao[$(this).attr('da-year')].indexOf("class='b'") > -1 ) {
+				if( $(this).attr('da-biao') != 169 && $(this).attr('da-biao') == 168 ) {
+					biao[$(this).attr('da-year')] = "<span class='a'></span><span class='b'></span>";
+				}
+				if( $(this).attr('da-biao') != 169 && $(this).attr('da-biao') == 170 ) {
+					biao[$(this).attr('da-year')] = "<span class='b'></span><span class='c'></span>";
+				}
+			} else if( biao[$(this).attr('da-year')].indexOf("class='c'") > -1 ) {
+				if( $(this).attr('da-biao') != 170 && $(this).attr('da-biao') == 168 ) {
+					biao[$(this).attr('da-year')] = "<span class='a'></span><span class='c'></span>";
+				}
+				if( $(this).attr('da-biao') != 170 && $(this).attr('da-biao') == 169 ) {
+					biao[$(this).attr('da-year')] = "<span class='b'></span><span class='c'></span>";
+				}
+			}
+			/*if( biao[$(this).attr('da-year')].indexOf('b') > -1 ) {
+              biao[$(this).attr('da-year')] = "<span class='a'></span><span class='b'></span><span class='c'></span>";
+            } else {
+              biao[$(this).attr('da-year')] = "<span class='a'></span><span class='b'></span>";
+            }*/
+		} else {
+			if( $(this).attr('da-biao') == 168 ) {
+				biao[$(this).attr('da-year')] = "<span class='a'></span>";
+			} else if( $(this).attr('da-biao') == 169 ) {
+				biao[$(this).attr('da-year')] = "<span class='b'></span>";
+			} else if( $(this).attr('da-biao') == 170 ) {
+				biao[$(this).attr('da-year')] = "<span class='c'></span>";
+			} else {
+				biao[$(this).attr('da-year')] = "";
+			}
+		}
+	})
+	function refrush(url, datas) {
+		$.get(url, datas, function(data) {
+			if (data) {
+				$('#datalist').html(data);
+				$(".new_home5 .dr .list").slick({
+					autoplay: true,
+					autoplaySpeed: 2000,
+					speed: 1000,
+					appendArrows: '.new_home5 .dr .slick-nav',
+					dots: false
+				})
+				$('.new_home5 .dr .list').on('init', function (e, s) {
+					$('.new_home5 .dr .slick-paging').text(s.currentSlide + 1 + '/' + s.slideCount);
+				});
+				$('.new_home5 .dr .list').on('afterChange', function (e, s, c) {
+					$('.new_home5 .dr .slick-paging').text(c + 1 + '/' + s.slideCount);
+				});
+			}
+		});
+	}
+	$(function () {
+		$(window).scroll(function () {
+			scrollact(".new_home2", null, function () {}, function () {});
+			scrollact(".new_home3", null, function () {}, function () {});
+			scrollact(".new_home4", null, function () {}, function () {});
+			scrollact(".new_home5", null, function () {}, function () {});
+			scrollact(".new_home6", null, function () {}, function () {});
+		}); // $.xRoll({
+		//   item: {
+		//     elm: '.new_home7 .item'
+		//   },
+		//   tween: 'left'
+		// });
+
+		$.xRoll({
+			item: {
+				elm: '.new_home8 .cont .list .li'
+			},
+			tween: 'bottom'
+		});
+		$(window).load(function () {
+			$(window).scroll();
+		});
+		$('.demo1 .pop-close').on('click', function () {
+			$('.demo1').removeClass('x-show');
+		});
+		var vIdx = 0;
+
+		if ($.utils.is_phone) {
+			vIdx = 1;
+		}
+
+		$('.new_home1 .frame').on('init', function (e, s) {
+			$('.new_home1 .banner-pro').addClass('ani');
+
+			if ($(".new_home1 .frame .slick-current").find("video").size() > 0) {
+				$(".new_home1 .frame .slick-current").find("video")[vIdx].play();
+				$(".new_home1 .frame .slick-current").find("video").bind("ended", function () {
+					$(".new_home1 .frame").slick("slickPlay");
+				});
+			} else {
+				setTimeout(function () {
+					$(".new_home1 .frame").slick("slickPlay");
+				}, 100);
+			}
+		});
+		$(".new_home1 .frame").slick({
+			autoplay: true,
+			autoplaySpeed: 6000,
+			speed: 800,
+			dots: true,
+			arrows: false,
+			cssEase: "cubic-bezier(0.5,0,0.3,1)",
+			pauseOnHover: false,
+			appendDots: ".new_home1 .nav"
+		});
+		$('.new_home1 .banner-btn').click(function () {
+			if (!$(this).hasClass('pause')) {
+				$(this).addClass('pause');
+				$(".new_home1 .frame").slick("slickPause");
+				$('.new_home1 .banner-pro').addClass('pause');
+				$(".new_home1 .slick-current").find("video")[0].pause();
+			} else {
+				$(this).removeClass('pause');
+				$(".new_home1 .frame").slick("slickPlay");
+				$('.new_home1 .banner-pro').removeClass('pause').addClass('play');
+				$(".new_home1 .slick-current").find("video")[0].play();
+			}
+		});
+		$('.new_home1 .frame').on('beforeChange', function (e, s, c) {
+			$('.new_home1 .banner-pro').removeClass('ani play');
+		});
+		$(".new_home1 .frame").on("afterChange", function (event, slick, currentSlide) {
+			// 进度条、
+			$('.new_home1 .banner-pro').addClass('ani');
+
+			if ($(".new_home1").find("video").length > 0) {
+				if ($(".slick-current").find("video").size() > 0) {
+					var videoTime = $(".slick-current").find("video")[0].duration;
+
+					if (!$('.new_home1 .banner-btn').hasClass('pause')) {
+						$(".slick-current").find("video")[0].play();
+					}
+
+					;
+					$('.new_home1 .banner-pro').css({
+						'-webkit-animation-duration': videoTime + 's'
+					});
+					$(".new_home1 .frame").slick("slickPause");
+					$(".slick-current").find("video").bind("ended", function () {
+						if (!$('.new_home1 .banner-btn').hasClass('pause')) {
+							$(".new_home1 .frame").slick("slickPlay");
+						} else {
+							$(".new_home1 .frame").slick("slickPause");
+						}
+					});
+				} else {
+					$('.new_home1 .banner-pro').attr("style", "");
+					$(".new_home1").find("video")[0].pause();
+				}
+			}
+		});
+		$('.new_home2 .box1 .l_top').slick({
+			autoplay: true,
+			arrows: false,
+			dots: true
+		});
+		$(".new_home2 .box2 .li").bind("mouseover", function () {
+			$(this).addClass("cur").siblings().removeClass("cur");
+		});
+		var codropsEvents = biao;
+		var calendar = $('#calendar').calendario({
+			caldata: codropsEvents,
+			weeks: ['日', '一', '二', '三', '四', '五', '六'],
+			months: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+			onDayClick: function onDayClick($el, data, dateProperties) {
+				//  console.log(dateProperties)
+				search.year = dateProperties.year;
+				search.month = dateProperties.month;
+				search.day = dateProperties.day;
+				if (data.length > 0) {
+					refrush("/searchs/academic.html",search);
+					$('#calendar .act').removeClass("act");
+					$(data[0]).parent().addClass("fc-today").siblings().removeClass("fc-today");
+				}
+			},
+			events: 'click'
+		});
+		var search2 = {
+			// 不设置category_id会出错
+			// category_id:'',
+			tpl_file : 'index2s',
+			pagesize : 1,
+			p:1
+		};
+		$.get("/searchs/academic.html", search2, function(data) {
+			if (data) {
+				$('#datalist2').html(data);
+				search.year  = Number($('#datalist2 .item').attr('da-y'));
+				search.month = Number($('#datalist2 .item').attr('da-m'));
+				search.day   = Number($('#datalist2 .item').attr('da-d'));
+			}
+		});
+		setTimeout(function(){
+			refrush("/searchs/academic.html",search);
+		},500);
+
+		$(".new_home5 .hd strong").html(calendar.getYear() + "年" + calendar.getMonthName() + "月");
+		$('.new_home5 .next').on('click', function () {
+			calendar.gotoNextMonth(function () {
+				$(".new_home5 .hd strong").html(calendar.getYear() + "年" + calendar.getMonthName() + "月");
+			});
+			$(".new_home5 .dl .hd .prev ").removeClass("disp");
+		});
+		$.get("/searchs/academic.html", {tpl_file : 'index2s', pagesize : 9999, p:1}, function(data) {
+			if (data) {
+				$('#datalist3').html(data);
+			}
+		});
+		$('.new_home5 .prev').on('click', function () {
+			calendar.gotoPreviousMonth(function () {
+				$(".new_home5 .hd strong").html(calendar.getYear() + "年" + calendar.getMonthName() + "月");
+			});
+			var myDate = new Date();
+			// var year = myDate.getFullYear();
+			// var month = myDate.getMonth() + 1;
+			var yr = calendar.getYear();
+			var mt = calendar.getMonth();
+			var year = $('#datalist3 .item:last').attr('da-y');
+			var month = $('#datalist3 .item:last').attr('da-m');
+			if (year == yr && month == mt) {
+				$(".new_home5 .dl .hd .prev ").addClass("disp");
+			}
+		});
+		$(document).on('click', '.new_home5 .dl .calendar .fc-calendar .fc-row>div', function () {
+			$('.new_home5 .dl .calendar .fc-calendar .fc-row>div').removeClass('fc-today act');
+			$(this).addClass('fc-today');
+		});
+
+
+		tabdiv(".new_home6 .tabs .item", ".new_home6 .list", "mouseover", 3, 300);
+		$(".new_home4 .mshow").slick({
+			autoplay: true,
+			autoplaySpeed: 3500,
+			speed: 800,
+			dots: false,
+			appendArrows: '.new_home4 .m-arrbox'
+		});
+		$('.new_home7 .line-1').slick({
+			autoplay: true,
+			arrows: false,
+			dots: false,
+			autoplaySpeed: 0,
+			speed: 19000,
+			cssEase: 'linear'
+		});
+		$('.new_home7 .line-2').slick({
+			autoplay: true,
+			arrows: false,
+			dots: false,
+			autoplaySpeed: 0,
+			speed: 17000,
+			cssEase: 'linear'
+		});
+		$('.new_home7 .line-3').slick({
+			autoplay: true,
+			arrows: false,
+			dots: false,
+			autoplaySpeed: 0,
+			speed: 12000,
+			cssEase: 'linear'
+		});
+
+		if ($(window).width() > 850) {
+			$('.new_home2 .box2 .li .l-t .t').each(function () {
+				var tW = $(this).find('a').width();
+				$(this).css('width', tW);
+			});
+		} else {
+			$('.new_home2 .box2 .li .l-t .t').each(function () {
+				$(this).css('width', 'auto');
+			});
+		}
+
+		;
+		$(window).resize(function () {
+			if ($(window).width() > 850) {
+				$('.new_home2 .box2 .li .l-t .t').each(function () {
+					var tW = $(this).find('a').width();
+					$(this).css('width', tW);
+				});
+			} else {
+				$('.new_home2 .box2 .li .l-t .t').each(function () {
+					$(this).css('width', 'auto');
+				});
+			}
+
+			;
+		}); ///
+	});
+	$('.demo1 .pop-close').on('click', function () {
+		$('.demo1').removeClass('x-show');
+	});
+	setTimeout(function () {
+		$('.demo1').removeClass('x-show');
+	}, 15000); ///
+</script>
+
+        <div class="x-footer red">
+    <div class="qrimg"><div class="img"><img class="i" src="" alt=""></div></div>
+    <!-- pc的结构 没有二维码的 不要加<div class="icon"><img class="i" src="image/lys/png85.png" alt=""></div>这个结构 会有bug -->
+    <!-- pc 结构 -->
+    <div class="slot p-show"><div class="slot-track" data-imgsrc="">
+    <div class="slot-item s1"></div>
+</div>
+<div class="slot-track" data-imgsrc="">
+    <div class="slot-item s2"></div>
+</div>
+<div class="slot-track" data-imgsrc="">
+    <div class="slot-item s3"></div>
+</div>
+<div class="slot-track" data-imgsrc="" alt="" title="">
+    <div class="slot-item s4">
+        <div class="icon"><img class="i" src="" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="" alt="" title="">
+    <div class="slot-item s5">
+        <div class="icon"><img class="i" src="" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="" alt="" title="">
+    <div class="slot-item s6">
+        <div class="icon"><img class="i" src="" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="" alt="" title="">
+    <div class="slot-item s7">
+        <div class="icon"><img class="i" src="" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="" alt="" title="">
+    <div class="slot-item s10">
+        <div class="icon"><img class="i" src="" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="static/picture/1.png" alt="" title="">
+    <div class="slot-item s8">
+        <div class="icon"><img class="i" src="static/picture/img5-3.png" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="static/picture/2.png" alt="" title="">
+    <div class="slot-item s9">
+        <div class="icon"><img class="i" src="static/picture/img6-3.png" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="" alt="" title="">
+    <div class="slot-item s11">
+        <div class="icon"><img class="i" src="static/picture/img7-3.png" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="" alt="" title="">
+    <div class="slot-item s12">
+        <div class="icon"><img class="i" src="static/picture/img9-3.png" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="" alt="" title="">
+    <div class="slot-item s13">
+        <div class="icon"><img class="i" src="static/picture/img10-3.png" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="" alt="" title="">
+    <div class="slot-item s15">
+        <div class="icon"><img class="i" src="static/picture/img12-3.png" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="" alt="" title="">
+    <div class="slot-item s14">
+        <div class="icon"><img class="i" src="" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="" alt="" title="">
+    <div class="slot-item s16">
+        <div class="icon"><img class="i" src="" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="" alt="" title="">
+    <div class="slot-item s17">
+        <div class="icon"><img class="i" src="" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="">
+    <div class="slot-item s18">
+        <div class="icon"><img class="i" src="" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="">
+    <div class="slot-item s19"></div>
+</div>
+<div class="slot-track" data-imgsrc="">
+    <div class="slot-item s20"></div>
+</div>
+<div class="slot-track" data-imgsrc="">
+    <div class="slot-item s21"></div>
+</div></div>    <!-- 移动端 结构 -->
+    <div class="slot m-show">
+<div class="slot-track" data-imgsrc="static/picture/1.png" alt="" title="">
+    <div class="slot-item s8">
+        <div class="icon"><img class="i" src="static/picture/img5-3.png" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="static/picture/2.png" alt="" title="">
+    <div class="slot-item s9">
+        <div class="icon"><img class="i" src="static/picture/img6-3.png" alt=""></div>
+    </div>
+</div>
+
+<div class="slot-track" data-imgsrc="" alt="" title="">
+    <div class="slot-item s11">
+        <div class="icon"><img class="i" src="static/picture/img7-3.png" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="" alt="" title="">
+    <div class="slot-item s12">
+        <div class="icon"><img class="i" src="static/picture/img9-3.png" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="" alt="" title="">
+    <div class="slot-item s13">
+        <div class="icon"><img class="i" src="static/picture/img10-3.png" alt=""></div>
+    </div>
+</div>
+<div class="slot-track" data-imgsrc="" alt="" title="">
+    <div class="slot-item s15">
+        <div class="icon"><img class="i" src="static/picture/img12-3.png" alt=""></div>
+    </div>
+</div>
+
+<div class="slot-track" data-imgsrc="/Uploads/Zgrmdxzw/Picture/2022/11/25/s6380b1980be98.png" alt="" title="">
+    
+</div></div>    <div class="cont">
+        <div class="w-wrap">
+            <div class="logo"><a href=""><img src="static/picture/s60bf2d0b2b898.png" alt="" title="" class="i"></a>
+<div class="syx"></div></div>            <div class="friend"><div class="h">友情链接：</div>
+<div class="tracker-mod dir-hor" page="">
+    <div class="tracker-box">
+        <div class="tracker-track">
+                    </div>
+    </div>
+    <div class="tracker-arrow tracker-prev xicon icon-left"></div>
+    <div class="tracker-arrow tracker-next xicon icon-right"></div>
+</div></div>            <div class="bottom">
+                <div class="text">
+                    <div class="m_i_n"><div class="item"><div class="icon"><img class="i" src="static/picture/png63.png" alt=""></div><div class="i_t">导员信箱</div><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";></a></div>
+    <div class="item"><div class="icon"><img class="i" src="static/picture/png63.png" alt=""></div><div class="i_t">班级信箱</div><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";></a></div>
+            <div class="item"><div class="icon"><img class="i" src="static/picture/png64.png" alt=""></div><div class="i_t">班日志</div><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";></a></div>        <div class="item"></div></div>                    <div><div class="nav_foot">
+    <a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>关于我们</a><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>联系我们</a><a href="#" onclick="alert('“十佳班集体”评选期间，暂不开放！')";>版权声明</a></div></div>                    <div class="p"><span>地址：安徽省芜湖市镜湖区安徽师范大学赭山校区</span><span>邮编：241001</span></div>                    <div class="p"><span>Copyright 2020级 教育技术学1班 All Rights Reserved.</span><span><a style="cursor: default;"></a></span>
+<!--                        <span><a href="http://www.fractal-technology.com" target="_blank">网站建设</a>：<a href="http://www.fractal-technology.com" target="_blank">北京分形科技</a></span>	-->
+                    </div>
+                </div>
+                <div class="share-box">
+                    <div class="gotop"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?e1ba419555c107bacf142ca9f37d6a65";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+    </div>
+            <style>
+    .empty-data{ width:100%; font-size:25px; padding-top:8%; padding-bottom:8%; text-align: center;}
+    </style>
+    	<div style="display:none;"><a href="https://smalltool.github.io/">仿站工具</a></div>
+        
+
+
+
+<audio id="bgMusic" src="static/music/bk.mp3"></audio>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    var bgMusic = document.getElementById('bgMusic');
+
+    // 在用户第一次与页面进行交互时播放音乐
+    document.addEventListener('click', playMusic);
+    document.addEventListener('touchstart', playMusic);
+
+    function playMusic() {
+      bgMusic.play();
+      // 只需要在第一次交互后播放音乐，因此移除事件监听器
+      document.removeEventListener('click', playMusic);
+      document.removeEventListener('touchstart', playMusic);
+    }
+  });
+</script>
+
+
+        
+</body>
+</html>
