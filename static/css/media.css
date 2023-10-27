@@ -1,0 +1,164 @@
+@media only screen and (max-width: 600px) {
+	body {
+		min-width: 100%;
+	}
+	.headerBg {
+		width: 100%;
+		height: auto;
+	}
+	.commonWidth {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0px 10px;
+	}
+	.nav, .search, .language, .swiperButton, .researchIntor .commonTitle>a, .newsText>a>span, .newsText>a>i, .swiperCenter .swiper-Core-pagination {
+		display: none;
+	}
+	.logo {
+		width: 86%;
+		height: auto;
+		margin: 15px 0px;
+	}
+	.menuSearch {
+		display: none;
+	}
+	.swiper-containerBanner {
+		height: 260px;
+	}
+	.swiper-containerBanner .swiper-pagination-bullets {
+		width: 100%;
+		left: auto;
+		top: auto;
+		bottom: 0px;
+	}
+	.swiper-containerBanner .swiper-pagination-clickable .swiper-pagination-bullet {
+		display: inline-block;
+		width: 3px;
+		height: 2px;
+	}
+	.swiper-containerBanner .swiper-pagination-bullet:last-child{
+		height: 2px;
+	}
+	.commonTitle>h3 {
+		font-size: 20px;
+		border-left: 2px solid #ae0a29;
+		line-height: 18px;
+		padding-left: 10px;
+	}
+	.commonTitle>h3>span {
+		font-size: 16px;
+	}
+	.mainCont {
+		margin-top: 25px;
+	}
+	.info, .news, .research, .footleft {
+		width: 100%;
+		float: none;
+		margin-left: 0px;
+	}
+	.commonTitle>a {
+		line-height: 20px;
+	}
+	.news, .research {
+		margin-top: 15px;
+	}
+	.main {
+		padding-bottom: 30px;
+	}
+	.footleft {
+		padding-top: 20px;
+	}
+	.footleft>p {
+		margin: 10px 0px;
+	}
+	.footCode {
+		display: none;
+	}
+	.link {
+		width: 37%;
+		margin-left: 15px;
+	}
+	.link>ul>li+li {
+		margin-top: 0px;
+	}
+	.link>ul>li>a, .contact>p {
+		line-height: 20px;
+	}
+	.headerbtn_bar {
+    	display: block;
+ 	}
+	.masking {
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		right: 0;
+		background-color: transparent;
+		transition: all 0.5s ease 0.2s;
+		z-index: -1;
+	}
+  .masking.focus {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1001;
+  }
+  .iphone_nav {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    margin-left: -40%;
+    transition: all 0.6s ease  0.2s;;
+    -webkit-transition: all 0.6s ease  0.2s;/*谷歌和safari*/
+    -moz-transition: all 0.6s ease  0.2s;/*火狐*/
+    -ms-transition: all 0.6s ease  0.2s;/*ie*/
+    -o-transition: all 0.6ss ease  0.2s;/*opera*/
+    z-index: 1002;
+  }
+  .iphone-box {
+    background-color: rgba(255, 255, 255, 0.98);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 46px;
+    padding-top: 80px;
+    transition: all 0.6s ease  0.2s;;
+    -webkit-transition: all 0.6s ease  0.2s;/*谷歌和safari*/
+    -moz-transition: all 0.6s ease  0.2s;/*火狐*/
+    -ms-transition: all 0.6s ease  0.2s;/*ie*/
+    -o-transition: all 0.6ss ease  0.2s;/*opera*/
+  }
+  .iphone-box>ul>li>a {
+    display: block;
+    font-size: 14px;
+    color: #000000;
+    line-height: 40px;
+  }
+  .iphone-box>ul>li>a>i {
+    height: 46px;
+    width: 16px;
+    padding-left: 8px;
+    box-sizing: content-box;
+    display: inline-block;
+    background: url(http://gh.ruc.edu.cn/images/phone_more.png) no-repeat right center;
+    vertical-align: middle;
+  }
+  .iphone-box>ul>li>ul {
+    display: none;
+    padding-bottom: 10px;
+  }
+  .iphone-box>ul>li>ul>li>a {
+    display: block;
+    font-size: 14px;
+    color: #000;  
+    line-height: 30px;
+  }
+  .iphone-box>ul>li>ul>li>a strong {
+    font-weight: normal !important;
+  }
+  .iphone_nav.focus {
+    margin-left: 0;
+    display: block !important;
+  }
+}

@@ -1,0 +1,46 @@
+
+*{ padding:0; margin:0;}
+li{ list-style-type:none;}
+a{ text-decoration:none;}
+.middle-wrap { width:942px; margin:22px auto;}
+.clear{ clear:both;}
+
+.ser1{ margin-right:0px;}
+.ser1,.ser2{ width:448px; overflow:hidden; float:left;}
+.icons{ background:url(../image/icons.gif) no-repeat;}
+.snav,.s2nav{ height:105px; overflow:hidden;}
+.snav li,.s2nav li{ width:92px; height:105px; float:left; text-align:center; font:12px "Microsoft YaHei",微软雅黑; margin-right:20px;}
+/*20190322.snav li .icons,.s2nav li .icons{ width:60px; height:62px;margin: 0 10px 0 8px;}*/
+.snav li .icons,.s2nav li .icons{ width:60px; height:62px;margin: 0 10px 0 16px;}
+.snav li a,.s2nav li a{ line-height:20px; display:block; color:#585858;}
+.ser1 li a:hover,.ser2 li a:hover{ color:#8c1415;}
+.snav li .icon1{ background-position:left -137px;}
+.snav li .icon2{ background-position:-62px -137px;}
+.snav li .icon3{ background-position:-124px -137px;}
+.snav li .icon4{ background-position:-186px -137px;}
+.snav .snav_current{background: url(../image/ul_bg.gif) no-repeat center bottom}
+.snav .snav_current .icon1{ background-position:left -265px;}
+.snav .snav_current .icon2{ background-position:-62px -265px;}
+.snav .snav_current .icon3{ background-position:-124px -265px;}
+.snav .snav_current .icon4{ background-position:-186px -265px;}
+
+.snav_down,.s2nav_down{ background:#ddd; width:415px;}
+.snav_down ul,.s2nav_down ul{ padding:10px; overflow:hidden;_margin-bottom:10px;height:96px; }
+.snav_down .dis,.s2nav_down .dis{ display:none;}
+
+.snav_down ul li{ font-size:12px; width:131px; float:left; line-height:26px; height:26px;_line-height:22px;}
+.s2nav_down ul li{ font-size:12px; width:197px; float:left; line-height:26px; height:26px;_line-height:22px;}
+
+.snav_down ul li span,.s2nav_down ul li span{ display:inline-block; width: 5px; height: 9px; background-position: -142px top; margin: 8px 5px 0 0;}
+.snav_down ul li a,.s2nav_down ul li a{ color:#585858;}
+
+.s2nav{ float:right;}
+.s2nav li .icon1{ background-position:-248px -137px;}
+.s2nav li .icon2{ background-position:-310px -137px;}
+.s2nav li .icon3{ background-position:left -201px;}
+.s2nav li .icon4{ background-position:-62px -201px;}
+.s2nav .s2nav_current{ background: url(../image/ul_bg.gif) no-repeat center bottom}
+.s2nav .s2nav_current .icon1{ background-position:-248px -265px;}
+.s2nav .s2nav_current .icon2{ background-position:-310px -265px;}
+.s2nav .s2nav_current .icon3{ background-position:-124px -201px;}
+.s2nav .s2nav_current .icon4{ background-position:-186px -201px;}

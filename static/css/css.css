@@ -1,0 +1,445 @@
+.c1 {
+  color: #000;
+}
+.c2 {
+  color: #b53e2e;
+}
+.c3 {
+  color: #d4623f;
+}
+.c4 {
+  color: #c4b453;
+}
+.c5 {
+  color: #ff9d4d;
+}
+.black {
+  color: #000;
+}
+.gray {
+  color: #666;
+}
+.align-right {
+  text-align: right;
+  float: right !important;
+}
+.radius-s {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.radius-m {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.radius-l {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+.bord {
+  font-weight: 700;
+}
+.box-border {
+  border: 1px solid #E5E5E5;
+}
+.box-gray {
+  background-color: #F1F1F1;
+}
+.tiup-icon {
+  background: url(../image/tiup-icon.png) #f1f1f1 top right no-repeat;
+}
+.center {
+  margin: 0 auto;
+  clear: both;
+  display: block;
+}
+.error {
+  color: #9c232a !important;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -41px;
+  /* the bottom margin is the negative value of the footer's height */
+}
+.margin-right-5 {
+  margin-right: 5px;
+}
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-o-keyframes rotating {
+    from{
+        -o-transform: rotate(0deg);
+    }
+    to{
+        -o-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes rotating {
+    from{
+        -moz-transform: rotate(0deg);
+    }
+    to{
+        -moz-transform: rotate(360deg);
+    }
+}
+.rotating {
+    -webkit-animation: rotating 50s linear infinite;
+    -o-animation: rotating 50s linear infinite;
+    -moz-animation: rotating 50s linear infinite;
+}
+
+@-webkit-keyframes rotating-l {
+    from{
+        -webkit-transform: rotate(360deg);
+    }
+    to{
+        -webkit-transform: rotate(0deg);
+    }
+}
+@-o-keyframes rotating-l {
+    from{
+        -o-transform: rotate(360deg);
+    }
+    to{
+        -o-transform: rotate(0deg);
+    }
+}
+@-moz-keyframes rotating-l {
+    from{
+        -moz-transform: rotate(360deg);
+    }
+    to{
+        -moz-transform: rotate(0deg);
+    }
+}
+.rotating-l {
+    -webkit-animation: rotating-l 50s linear infinite;
+    -o-animation: rotating-l 50s linear infinite;
+    -moz-animation: rotating-l 50s linear infinite;
+}
+
+@-webkit-keyframes popup {
+  0%  {top: -275px;}
+  50% { top: -295px;}
+  100% {top: -275px;}
+}
+@-o-keyframes popup {
+  0%  {top: -275px;}
+  50% { top: -295px;}
+  100% {top: -275px;}
+}
+@-moz-keyframes popup {
+  0%  {top: -275px;}
+  50% { top: -295px;}
+  100% {top: -275px;}
+}
+
+.popup {
+    -webkit-animation: popup 15s linear infinite;
+    -o-animation: popup 15s linear infinite;
+    -moz-animation: popup 15s linear infinite;
+}
+
+.top {
+  background-image: url('../image/line-bg.png');
+  background-repeat: repeat;
+  border-bottom: 1px solid #DFDFDF;
+  padding: 30px 0;
+}
+.logo {
+  width: 96px;
+  height: 32px;
+}
+.freshman {
+  height: 32px;
+  line-height: 32px;
+}
+.login-btn {
+  background-color: #fff;
+}
+.middle {
+  padding: 60px 0;
+}
+.leftbanner {
+  height: 295px;
+  overflow: hidden;
+}
+.leftbanner-main {
+  background: url(../image/banner-main.png) bottom left no-repeat;
+  height: 295px;
+  width: 640px;
+  position: relative;
+  z-index: 20px;
+}
+.gear-0 {
+  position: relative;
+  z-index: 40;
+  width: 40px;
+  height: 40px;
+  background: url(../image/gear-0.png) 0 0 no-repeat;
+  top: -380px;
+  left: 395px;
+}
+.gear-1 {
+  position: relative;
+  z-index: -10;
+  width: 151px;
+  height: 151px;
+  background: url(../image/gear-1.png) 0 0 no-repeat;
+  top: -250px;
+  left: 130px;
+}
+.gear-2 {
+  position: relative;
+  z-index: 30;
+  width: 91px;
+  height: 91px;
+  background: url(../image/gear-2.png) 0 0 no-repeat;
+  top: -245px;
+  left: 505px;
+}
+.gear-3 {
+  position: relative;
+  z-index: 10;
+  width: 67px;
+  height: 67px;
+  background: url(../image/gear-3.png) 0 0 no-repeat;
+  top: -153px;
+  left: 183px;
+}
+.gear-4 {
+  position: relative;
+  z-index: 15;
+  width: 125px;
+  height: 125px;
+  background: url(../image/gear-4.png) 0 0 no-repeat;
+  top: -345px;
+  left: 415px;
+}
+.gear-5 {
+  position: relative;
+  z-index: 15;
+  width: 100px;
+  height: 129px;
+  background: url(../image/gear-5.png) 0 0 no-repeat;
+  top: -275px;
+  left: 215px;
+}
+.leftbanner2 {
+  background: url(../image/banner2.png) bottom left no-repeat;
+  height: 295px;
+  width: 640px;
+  position: relative;
+  z-index: 20;
+}
+.leftbanner3 {
+  background: url(../image/banner3.png) bottom left no-repeat;
+  height: 295px;
+}
+.slogon {
+  float: left;
+}
+.slogon span {
+  display: block;
+}
+.slogon span.main-slogon {
+  font-size: 36px;
+  color: #394C3B;
+  line-height: 40px;
+}
+.slogon span.sub-slogon {
+  font-size: 12px;
+  color: #728353;
+  line-height: 20px;
+  margin-top: 10px; 
+}
+.formbox {
+  padding: 35px 20px;
+}
+.formbox h6 {
+  color: #000;
+}
+.formbox h7 {
+  color: #666;
+}
+.formbox h7 a {
+  color: #D3613F;
+}
+.inputbox {
+  width: 100%;
+  height: 90px;
+}
+.inputbox input {
+  border: 1px solid #ccc;
+  padding: 0;
+  margin: -1px 0 0 0;
+  padding-left: 60px;
+  padding-top:15px\9;
+}
+.inputbox input:focus {
+  border: 1px solid #4DD2FF;
+  z-index: 100;
+}
+.inputbox input.username {
+  background:url('../image/username-bg.png') 0 0 no-repeat;
+  background:url('../image/username-bg-s.png') 0 0 no-repeat\9;
+  background-size: 50px 45px;
+  background-color: #fff;
+  width: 100%;
+  height: 45px;
+  position: relative;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+}
+.inputbox input.password {
+  background:url('../image/password-bg.png') 0 0 no-repeat;
+  background:url('../image/password-bg-s.png') 0 0 no-repeat\9;
+  background-size: 50px 45px;
+  background-color: #fff;
+  width: 100%;
+  height: 45px;
+  position: relative;
+  top: 0px;
+  left: 0;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+
+}
+.codebox {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.codebox img {
+  height: 40px;
+  width: 45%;
+  float: left;
+}
+.codebox input.code {
+  float: right;
+  width: 45%;
+  height: 32px;
+  padding-left: 5px;
+}
+.login-btn {
+  width: 100%;
+  color: #FFFFFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #428BCA;
+  background-image: -moz-linear-gradient(top, #d2603e, #b94230);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d2603e), to(#b94230));
+  background-image: -webkit-linear-gradient(top, #d2603e, #b94230);
+  background-image: -o-linear-gradient(top, #d2603e, #b94230);
+  background-image: linear-gradient(to bottom, #428BCA, #428BCA);
+  background-repeat: repeat-x;
+  border-color: #428BCA;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D2603E', endColorstr='#B94230', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+}
+
+
+.login-btn:hover,
+.login-btn:active,
+.login-btn.active,
+.login-btn.disabled,
+.login-btn[disabled] {
+  color: #FFFFFF;
+  background-color: #428BCA;
+  *background-color: #428BCA;
+}
+
+.info {
+  width: 97%;
+  padding: 6px 4px;
+  border: 1px solid #C0C0C0;
+  background-color: #F1F1F1;
+  float: left;
+}
+.info-left {
+  float: left;
+  text-align: left;
+}
+.info-right {
+  float: right;
+  text-align: right;
+}
+.helplink {
+  margin-bottom: 10px !important;
+  font-size: 12px;
+  float: right;
+  text-align: right;
+  line-height: 20px;
+  color: #9C232A;
+}
+
+input.verify {
+  width: 47% !important;
+  float: left;
+}
+img.maincont_loginbox_vertify_img {
+  float: left;
+  margin-left: 10px;
+}
+.desc {
+  margin-top: 30px;
+}
+.desc a {
+  color: #727F52;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.lefticon {
+  float: left;
+  width: 20%;
+  font-size: 24px;
+  text-align: center;
+}
+.itemdesc {
+  float: left;
+  width: 80%;
+  color: #666;
+}
+.bottom {
+  background-color: #FBFBFB;
+  border-top: 1px solid #DFDFDF;
+  height: 40px;
+}
+.footer {
+  height: 20px;
+  padding: 10px 0;
+}
+.footerlist {
+  margin-bottom: 0;
+}
+.footerlist li {
+  display: inline;
+  float: left;
+  margin-right: 15px;
+}
+.footer select {
+  margin-bottom: 0;
+  float: right;
+}
+.footer span.icon-vruc {
+  line-height: 17px;
+  font-size: 24px;
+  color: #ccc;
+  float: right;
+  margin-left: 10px;
+}
+.footer span.icon-vruc:hover {
+  text-decoration: none;
+}

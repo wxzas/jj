@@ -1,0 +1,2040 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #F2F2F2;
+}
+strong{font-weight: bold;}
+.clear {
+    clear: both;
+}
+
+.borderNone {
+    border: none!important;
+}
+
+.center {
+    width: 1400px;
+    margin: 0 auto
+}
+
+
+/* header */
+
+.top {
+    width: 100%;
+    background: #AE0A29;
+    height: 100px;
+    position: relative;
+    z-index: 99;
+}
+
+.top .center {
+    position: relative;
+}
+
+.logoBox {
+    width: 36%;
+    display: flex;
+    float: left;
+    height: 100px;
+    align-items: center;
+}
+
+.iconSearch {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../image/input.png) no-repeat;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    cursor: pointer;
+}
+
+
+/* .logo img {
+    width: 100%;
+} */
+
+.nav {
+    float: right;
+    padding-right: 40px;
+}
+
+.nav>ul li {
+    float: left;
+    position: relative;
+}
+
+.nav>ul li a {
+    display: inline-block;
+    padding: 38px 18px;
+    color: #ffff;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav>ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+.nav>ul li>ul li a::after {
+    content: none;
+}
+
+.nav>ul li a:hover::after,
+.nav>ul li.active a::after {
+    width: 100%;
+    transition: all linear 0.3s;
+}
+
+.nav>ul li>ul li a:hover {
+    color: #AE0A29;
+}
+
+.nav>ul li>ul {
+    width: 120%;
+    position: absolute;
+    top: 100%;
+    display: none;
+    left: -10%;
+}
+
+.nav>ul li>ul li {
+    float: inherit;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+.nav>ul li>ul li::after {
+    content: none;
+}
+
+.nav>ul li>ul li a {
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 5px;
+    font-size: 14px;
+}
+
+.searchBox {
+    width: 100%;
+    background-color: rgba(174, 10, 41, 0.8);
+    position: absolute;
+    top: -100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.3s;
+}
+
+.search {
+    width: 400px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.search input {
+    outline: none;
+    border: none;
+}
+
+.inText {
+    width: 340px;
+    height: 100%;
+    float: left;
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.close {
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+header {
+    display: none;
+    position: relative;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    background-color: #AE0A29;
+}
+
+.container {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.innerWrapper {
+    position: relative;
+}
+
+.innerWrapper .logo {
+    width: 300px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+.innerWrapper .logo img {
+    width: 100%;
+}
+
+.menuWrapper {
+    float: right;
+    width: 100%;
+    position: relative;
+    z-index: 99;
+}
+
+.menu-collapser {
+    position: relative;
+    width: auto;
+    clear: both;
+    margin: 25px 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+}
+
+.collapse-button {
+    position: relative;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.collapse-button .icon-bar {
+    display: block;
+    width: 26px;
+    height: 2px;
+    margin: 5px 0 0 0;
+    background: #fff;
+    border-radius: 1px;
+}
+
+.menu {
+    display: none;
+    background: #fff;
+    max-height: 350px;
+    overflow-y: auto;
+    text-align: left;
+    overflow-x: hidden;
+    -webkit-box-shadow: 0px 13px 25px -12px rgb(0 0 0 / 25%);
+    -moz-box-shadow: 0px 13px 25px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 13px 25px -12px rgb(0 0 0 / 25%);
+}
+
+.webSearch {
+    border: 1px solid #e71a2f;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 80%;
+    margin: 15px auto;
+    background-color: #AE0A29;
+}
+
+.webSearch input {
+    outline: none;
+    border: none;
+}
+
+.inpTit {
+    height: 15px;
+    padding: 15px;
+    width: 80%;
+    float: left;
+}
+
+.inpSearch {
+    width: 20%;
+    float: left;
+    background: url(../image/input.png) no-repeat center center;
+    height: 15px;
+    padding: 15px;
+}
+
+.menuOne>li {
+    width: 100%;
+    position: relative;
+}
+
+.menuOne>li>a {
+    display: block;
+    padding: 0 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    line-height: 40px;
+    font-size: 15px;
+    text-transform: capitalize;
+    -o-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    color: #333;
+}
+
+.menuOne>li>a:before {
+    background: #e71a2f;
+    content: '';
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    z-index: 1;
+}
+
+.menuOne>li.active>a:before,
+.menuOne>li:hover>a:before {
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+ul.dropdown {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 999;
+    min-width: 200px;
+    white-space: nowrap;
+    background: #fff;
+    -webkit-box-shadow: 0px 13px 25px -12px rgb(0 0 0 / 25%);
+    -moz-box-shadow: 0px 13px 25px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 13px 25px -12px rgb(0 0 0 / 25%);
+}
+
+.menuOne>li>ul.dropdown li {
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    text-align: left;
+}
+
+.menuOne ul.dropdown li a {
+    width: 100%;
+    background: none;
+    padding: 0 0 0 25px;
+    line-height: 40px;
+    font-size: 13px;
+    color: #777777;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    clear: both;
+    position: relative;
+    outline: 0;
+    z-index: 1;
+    transition-delay: 0.1s;
+    -o-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.menuOne ul.dropdown li a:before {
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.menuOne ul.dropdown li a:before {
+    transition: all .3s ease-in-out;
+}
+
+.menuOne ul.dropdown li a:before {
+    background: #e71a2f;
+}
+
+.menuOne ul.dropdown li:hover a {
+    color: #fff
+}
+
+.menuOne ul.dropdown li:hover a:before {
+    width: 100%;
+}
+
+.menuOne li .sub-toggle {
+    display: block;
+    position: absolute;
+    width: 50px;
+    right: 0;
+    line-height: 40px;
+    top: 0;
+    border-left: solid 1px rgba(0, 0, 0, 0.05);
+    color: #181818;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9;
+    font-size: 20px;
+    color: #555;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuOne li .sub-toggle i {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.menuOne li .expend i {
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -moz-transform: rotate(45deg);
+    /* Firefox */
+    -webkit-transform: rotate(45deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(45deg);
+    /* Opera */
+}
+
+
+/*banner*/
+
+.inSub {
+    background: url(../image/input.png);
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin: 5px;
+}
+
+.banner {
+    width: 100vw;
+    height: 50vw;
+    position: relative;
+}
+
+.swiper,
+.bannerItem {
+    width: 100%;
+    height: 100%;
+}
+
+.banner a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bannerItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.bannerTxt {
+    position: absolute;
+    bottom: 0;
+    background: url(../image/opa.png) repeat center;
+    text-align: left;
+    height: 100px;
+    line-height: 100px;
+    left: 50%;
+    margin-left: -700px;
+}
+
+.bannerTxt p {
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+    padding-left: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
+}
+
+.bannerPage {
+    width: 150px;
+    position: absolute;
+    right: 0!important;
+    bottom: 22px;
+    margin-right: 30px;
+}
+
+.bannerPage .swiper-pagination-bullet {
+    background: url(../image/roll.png) no-repeat;
+    width: 14px;
+    height: 14px;
+    margin: 0 4px;
+    opacity: 1 !important;
+}
+
+.bannerPage .swiper-pagination-bullet-active {
+    background: url(../image/rollW.png) no-repeat;
+}
+
+.bannerPage .swiper-button-next:after,
+.bannerPage .swiper-button-prev:after {
+    font-size: 16px;
+}
+
+.bannerPage .swiper-button-next,
+.bannerPage .swiper-button-prev {
+    color: #fff;
+    margin-top: -42px;
+    z-index: 11;
+}
+
+
+/* main */
+
+
+/* 学院动态 */
+
+.blockItem {
+    width: 100%;
+}
+
+.tit {
+    padding: 40px 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tit p {
+    color: #AE0A29;
+    font-size: 36px;
+    font-family: Source Han Serif CN;
+    float: left;
+}
+
+.tit a {
+    color: #AE0A29;
+    font-size: 14px;
+    float: right;
+}
+
+.tit a:hover {
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.rowsBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.rowsBox .row {
+    width: 32%;
+    overflow: hidden;
+    padding: 20px;
+    background: #fff;
+}
+
+.rowsBox .row i {
+    width: 100%;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+}
+
+.rowsBox .row i img {
+    /* width: 100%; */
+    max-height: 240px;
+}
+
+.rowsBox .row h6 {
+    font-size: 18px;
+    color: #333;
+    line-height: 30px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* 这里是超出几行省略 */
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.rowsBox .row p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
+    margin: 20px 0;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* 这里是超出几行省略 */
+    overflow: hidden;
+}
+
+.rowsBox .row span {
+    color: #AE0A29;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.rowsBox .row:hover {
+    box-shadow: 0 0 15px rgba(174, 10, 41, 0.3);
+    transition: all ease-in-out 0.3s;
+    border-radius: 8px;
+}
+
+.rowsBox .row:hover h6 {
+    color: #AE0A29;
+}
+
+
+/*通知公告*/
+
+.rowsBox .noticeRow {
+    width: 23.5%;
+    overflow: hidden;
+    padding: 20px;
+    background: #fff;
+}
+
+.rowsBox .noticeRow .notop {
+    width: 100%;
+    overflow: hidden;
+}
+
+.rowsBox .noticeRow .notop .notIcon {
+    display: block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: url(../image/icon.png) no-repeat center center rgba(174, 10, 41, 0.06);
+}
+
+.rowsBox .noticeRow .notop .num {
+    float: right;
+}
+
+.rowsBox .noticeRow .notop .num::after {
+    content: '01';
+    font-family: Times New Roman;
+    font-size: 40px;
+    font-weight: bold;
+    background-image: -webkit-linear-gradient(#AE0A29, #fff);
+    /* Safari 5.1 - 6.0 */
+    background-image: -o-linear-gradient(#AE0A29, #fff);
+    /* Opera 11.1 - 12.0 */
+    background-image: -moz-linear-gradient(#AE0A29, #fff);
+    /* Firefox 3.6 - 15 */
+    background-image: linear-gradient(#AE0A29, #fff);
+    /* 标准的语法（必须放在最后） */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 36px;
+    font-style: normal;
+}
+
+.rowsBox .noticeRow+.noticeRow .notop .num::after {
+    content: '02';
+}
+
+.rowsBox .noticeRow+.noticeRow+.noticeRow .notop .num::after {
+    content: '03';
+}
+
+.rowsBox .noticeRow+.noticeRow+.noticeRow+.noticeRow .notop .num::after {
+    content: '04';
+}
+
+.rowsBox .noticeRow p {
+    color: #333;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: MicrosoftYaHei;
+    margin: 20px 0;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    /* 这里是超出几行省略 */
+    overflow: hidden;
+}
+
+.rowsBox .noticeRow span {
+    color: #AE0A29;
+    font-size: 14px;
+}
+
+.rowsBox .noticeRow:hover {
+    box-shadow: 0 0 15px rgba(174, 10, 41, 0.3);
+    transition: all ease-in-out 0.3s;
+    border-radius: 8px;
+}
+
+.rowsBox .noticeRow:hover p {
+    color: #AE0A29;
+}
+
+
+/* 教师风采 */
+
+.indexBg {
+    background: url(../image/itemBg.png) no-repeat center;
+    padding: 40px 0;
+    margin-top: 40px;
+    position: relative;
+    padding-bottom: 120px;
+}
+
+.indexBg .tit p,
+.indexBg a {
+    color: #fff;
+}
+
+.teacherBox {
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+
+.teacherItem {
+    background: #fff;
+    width: 100%;
+    height: 450px;
+}
+
+.teacherItem i {
+    display: block;
+    width: 100%;
+    max-height: 280px;
+    overflow: hidden;
+}
+
+.teacherItem i img {
+    width: 100%;
+}
+
+.teacherItem .teacherMess {
+    padding: 20px;
+    text-align: center;
+}
+
+.teacherItem .teacherMess h6 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.teacherItem .teacherMess p {
+    color: #999;
+    font-size: 14px;
+    line-height: 26px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* 这里是超出几行省略 */
+    overflow: hidden;
+}
+
+.teacherItem:hover h6 {
+    color: #AE0A29;
+    transition: all ease-in-out 0.3s;
+}
+
+.teacherItem:hover p {
+    color: #666;
+    transition: all ease-in-out 0.3s;
+}
+
+.teacherPage {
+    position: absolute;
+    bottom: 34px;
+    width: 1400px;
+    left: 50%;
+    margin-left: -700px;
+    height: 34px;
+}
+
+.teaPagination {
+    width: auto!important;
+    left: 0;
+}
+
+.teaPagination .swiper-pagination-bullet {
+    background: transparent!important;
+    width: inherit!important;
+    height: inherit!important;
+    opacity: 1!important;
+    color: #a0a0a0;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.teaPagination .swiper-pagination-bullet-active {
+    background: transparent;
+    opacity: 1!important;
+    color: #fff;
+}
+
+.teacherPage .swiper-button-next:after,
+.teacherPage .swiper-button-prev:after {
+    content: none;
+}
+
+.teacherPage .swiper-button-next,
+.teacherPage .swiper-button-prev {
+    width: 34px;
+    height: 34px;
+    overflow: hidden;
+}
+
+.teacherPage .swiper-button-next {
+    background: url(../image/next4.png) no-repeat;
+    right: 0;
+}
+
+.teacherPage .swiper-button-prev {
+    background: url(../image/prev4.png) no-repeat;
+    right: 54px;
+    left: auto;
+}
+
+
+/*学术观点*/
+
+.rowNews {
+    width: 48%;
+}
+
+.learnItem {
+    background: #fff;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    height: 280px;
+}
+
+.learnItem+.learnItem {
+    margin-top: 20px;
+}
+
+.learnItem i {
+    display: block;
+    width: 200px;
+    text-align: center;
+    height: 240px;
+    overflow: hidden;
+}
+
+.learnItem i img {
+    height: 100%;
+}
+
+.learnItem .learnTxt {
+    margin-left: 30px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.learnItem .learnTxt .learnToptxt h6 {
+    color: #333;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.learnItem .learnTxt .learnToptxt p {
+    color: #999;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 15px 0;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* 这里是超出几行省略 */
+    overflow: hidden;
+}
+
+.learnBotxt p {
+    color: rgba(102, 102, 102, 1);
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.learnBotxt p span {
+    color: #AE0A29;
+}
+
+.learnBotxt {
+    padding-top: 10px;
+    border-top: 1px solid #AE0A29;
+    margin-top: 2px;
+}
+
+.learnItem:hover {
+    box-shadow: 0 0 15px rgba(174, 10, 41, 0.3);
+    transition: all ease-in-out 0.3s;
+    border-radius: 8px;
+}
+
+.learnItem:hover .learnTxt .learnToptxt h6 {
+    color: #AE0A29;
+}
+
+
+/* 思想观点 */
+
+.poingItem {
+    background: #fff;
+    padding: 20px;
+    overflow: hidden;
+    height: 180px;
+    display: flex;
+}
+
+.poingItem+.poingItem {
+    margin-top: 20px;
+}
+
+.poingItem i {
+    display: block;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.poingItem i img {
+    width: 140px;
+    height: 100%;
+}
+
+.poinTxt {
+    margin-left: 30px;
+}
+
+.poinTxt h6 {
+    color: #333;
+    font-size: 18px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* 这里是超出几行省略 */
+    overflow: hidden;
+}
+
+.poinTxt p {
+    font-size: 14px;
+    color: #999;
+    line-height: 24px;
+    margin: 15px 0;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* 这里是超出几行省略 */
+    overflow: hidden;
+}
+
+.poinTxt span {
+    color: #AE0A29;
+    font-size: 14px;
+}
+
+.poingItem:hover {
+    box-shadow: 0 0 15px rgba(174, 10, 41, 0.3);
+    transition: all ease-in-out 0.3s;
+    border-radius: 8px;
+}
+
+.poingItem:hover .poinTxt h6 {
+    color: #AE0A29;
+}
+
+.advertise {
+    display: block;
+    width: 100%;
+    height: 200px;
+    margin: 30px 0;
+}
+
+
+/*项目总结数量*/
+
+.count {
+    width: 100%;
+    background: #322116;
+}
+
+.count .center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 120px;
+}
+
+.countItem {
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+}
+
+.countItem h5 {
+    color: #76635c;
+    font-size: 16px;
+    width: 60%;
+    display: inline-block;
+}
+
+.countItem p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.countItem p span {
+    font-size: 36px;
+}
+
+
+/* footer */
+
+.bottom {
+    padding: 40px 0;
+    background: #332822;
+}
+
+.fooCont {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.yqlj {
+    width: 52%;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lxwm {
+    width: 40%;
+}
+
+.yqlj h6,
+.lxwmBox h6 {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.yqlj ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.yqlj ul li {
+    width: 33.333%;
+    padding-right: 20px;
+}
+
+.yqlj ul li a,
+.lxwmBox p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 30px;
+}
+
+.yqlj ul li a:hover {
+    color: #AE0A29;
+}
+
+.lxwm {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lxwmBox {
+    width: 64%;
+}
+
+.code {
+    width: 33%;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.code p {
+    font-size: 12px;
+    color: #fff;
+    line-height: 24px;
+}
+
+.lxwmBox p {
+    background: url(../image/icon2.png) no-repeat left center;
+    padding-left: 30px;
+}
+
+.lxwmBox p+p {
+    background-image: url(../image/icon3.png);
+}
+
+.lxwmBox p+p+p {
+    padding-left: 0;
+    background-image: none;
+}
+
+
+/*子页面公共部分*/
+
+.facePlate {
+    background: url(../image/lumn.jpg) no-repeat center center;
+    width: 100%;
+    height: 300px;
+}
+
+.facePlate .center {
+    position: relative;
+    height: 300px;
+}
+
+.facePlate .platetxt {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    z-index: 4;
+}
+
+.facePlate h6 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px 0;
+}
+
+.facePlate span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content .center {
+    display: flex;
+}
+
+.leftNav {
+    width: 18%;
+    display: inline-block;
+}
+
+.rightCon {
+    width: 83%;
+    padding: 0 80px 80px 80px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.leftNav ul li a {
+    display: block;
+    background: #e0ddde;
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden;
+    padding: 26px 10px;
+}
+
+.leftNav ul li {
+    margin-bottom: 1px;
+}
+
+.leftNav ul li.act a,
+.leftNav ul li:hover a {
+    background-color: #AE0A29;
+    color: #fff;
+}
+
+.crumbs {
+    width: 100%;
+    padding: 30px 0;
+    color: #999;
+    font-size: 14px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.crumbs a {
+    color: #999;
+    font-size: 14px;
+}
+
+
+/*简介（introduce）*/
+
+.introduceMess h6 {
+    color: #AE0A29;
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    border-left: 4px solid #AE0A29
+}
+
+.introduceMess img {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.introduceMess p {
+    color: #444;
+    font-size: 15px;
+    line-height: 30px;
+    text-indent: 30px;
+    padding-bottom: 30px;
+}
+
+
+/*新闻列表*/
+
+.newsListItem {
+    padding: 20px 0;
+    border-bottom: 1px solid #e1e1e1;
+    display: flex;
+    height: 200px;
+    overflow: hidden;
+}
+
+.newsListItem i {
+    display: block;
+    width: 267px;
+    height: 160px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.newsListItem i img {
+    height: 100%;
+}
+
+.newsListItem .listImgTxt {
+    margin-left: 40px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.newsListItem .listImgTxt h6 {
+    font-size: 18px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 44px;
+}
+
+.newsListItem .listImgTxt span {
+    font-size: 14px;
+    color: #AE0A29;
+    line-height: 44px;
+}
+
+.newsListItem .listImgTxt p {
+    font-size: 14px;
+    color: #999;
+    line-height: 26px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.newsListItem:hover {
+    border-bottom-color: #AE0A29;
+    transition: all ease-in-out 0.3s;
+}
+
+.newsListItem:hover .listImgTxt h6 {
+    color: #AE0A29;
+}
+
+
+/*通知公告*/
+
+.noticeListItem {
+    width: 100%;
+    border-bottom: 1px solid #e1e1e1;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 10px;
+}
+
+.noticeListItem h6 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+    font-size: 16px;
+    width: 88%;
+    float: left;
+}
+
+.noticeListItem span {
+    color: #AE0A29;
+    font-size: 14px;
+    float: right;
+}
+
+.noticeListItem:hover {
+    border-bottom-color: #AE0A29;
+}
+
+.noticeListItem:hover h6 {
+    color: #AE0A29;
+}
+
+
+/*教师列表*/
+
+.teacherList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.teacherList .teacherListItem {
+    width: 25%;
+    padding: 0 20px;
+    margin-bottom: 38px;
+}
+
+.teacherList .teacherListItem i {
+    display: block;
+    width: 100%;
+    height: 192px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.teacherList .teacherListItem i img {
+    width: 100%;
+}
+
+.teacherList .teacherListItem p {
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    background-color: #f2f2f2;
+}
+
+
+/*学科传承*/
+
+.timeBox {
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.timeBox h5 {
+    width: 208px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 3px;
+    background-color: #AE0A29;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.timeBox h5::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5px;
+    left: 4px;
+    background-color: rgba(174, 10, 41, 0.4);
+    border-radius: 3px;
+    z-index: -1;
+}
+
+.timeBox ul {
+    border-left: 3px solid #f7e6e9;
+    margin-left: 20px;
+    margin-top: -24px;
+    padding-top: 40px;
+}
+
+.timeBox ul li {
+    width: 100%;
+    margin: 20px 0;
+    padding-left: 60px;
+    background: url(../image/dot.png) no-repeat 11px 10px;
+    position: relative;
+    z-index: 1;
+    margin-left: -20px;
+}
+
+.timeBox ul li h6 {
+    font-style: italic;
+    color: #AE0A29;
+    font-size: 22px;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.timeBox ul li p {
+    color: #333;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+
+/*详情页*/
+
+.detailBox {
+    width: 100%;
+    overflow: hidden;
+}
+
+.detailBox .detailTit {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.detailTit h6 {
+    color: #333;
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.detailTit span {
+    font-size: 14px;
+    color: #999;
+}
+
+.detailCon {
+    padding: 20px 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.detailCon p {
+    color: #666!important;
+    font-size: 16px!important;
+    line-height: 30px!important;
+    text-indent: 32px;
+    padding-bottom: 20px;
+}
+
+.detailCon tr td p {
+    text-indent: 0;
+}
+
+.pageNP {
+    padding-top: 40px;
+    border-top: 1px solid #e1e1e1
+}
+
+.pageNP a {
+    display: block;
+    color: #999;
+    font-size: 14px;
+}
+
+.pageNP a+a {
+    margin-top: 25px;
+}
+
+
+/*教师详情*/
+
+.teacherDetail {
+    padding: 20px 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.teacherBase {
+    width: 100%;
+    display: flex;
+}
+
+.teacherBase i {
+    width: 220px;
+    height: 192px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.teacherBase i img {
+    width: 220px;
+}
+
+.teacherBase .teacherBaseTxt {
+    margin-left: 70px;
+}
+
+.teacherBase .teacherBaseTxt h6 {
+    color: #333;
+    font-size: 20px;
+    line-height: 54px;
+}
+
+.teacherBase .teacherBaseTxt p {
+    color: #999;
+    font-size: 16px;
+    line-height: 34px;
+}
+
+.personMess h6 {
+    width: 100%;
+    background-color: #f9ecee;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 25px;
+    color: #AE0A29;
+    font-size: 18px;
+    margin: 34px 0;
+}
+
+.teacherMess p,
+.personMess p {
+    line-height: 28px;
+    color: #666;
+    font-size: 14px;
+}
+
+
+/*管理团队*/
+
+.teamItem {
+    width: 100%;
+    overflow: hidden;
+}
+
+.teamItem h4 {
+    color: #AE0A29;
+    background-color: #f9ecee;
+    text-indent: 25px;
+    font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+}
+
+.teamPerson {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.teamPerson i {
+    display: block;
+    width: 280px;
+    height: 260px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.teamPerson i img {
+    width: 280px;
+}
+
+.teamPerson .personMess {
+    margin-left: 40px;
+}
+
+.teamPerson .personMess h5 {
+    color: #333;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+.teamPerson .personMess p {
+    color: #666;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.teamPicBox {
+    display: block;
+    padding-top: 50px;
+    border-top: 1px solid #e1e1e1
+}
+
+.teamPicBox .teamImgTxt {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 50px;
+    height: 340px;
+    vertical-align: text-top;
+}
+
+.teamPicBox .teamImgTxt i {
+    display: inline-block;
+    width: 280px;
+    height: 260px;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.teamPicBox .teamImgTxt i img {
+    height: 100%;
+}
+
+.teamPicBox .teamImgTxt h6 {
+    color: #333;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.teamPicBox .teamImgTxt p {
+    font-size: 16px;
+    color: #666;
+}
+
+.sort {
+    padding: 20px 0;
+}
+
+.sort a {
+    display: inline-block;
+    padding: 8px 10px;
+    color: #333;
+    /* overflow: hidden; */
+}
+
+.sort a.act,
+.sort a:hover {
+    color: #fff;
+    background-color: #AE0A29;
+}
+
+
+/*分页*/
+
+.page {
+    width: 100%;
+    overflow: hidden;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination li {
+    margin: 0 5px
+}
+
+.pagination li span {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #e0ddde;
+    color: #333;
+}
+
+.pagination li.active span {
+    background: #AE0A29;
+    color: #fff;
+}
+
+.tabCont h6 {
+    width: 100%;
+    border-bottom: 1px solid #AE0A29;
+    overflow: hidden;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabCont h6 p {
+    background-color: #AE0A29;
+    color: #fff;
+    padding: 8px 18px;
+    font-size: 18px;
+}
+
+.tabCont h6 a {
+    color: #AE0A29;
+    font-size: 14px;
+}
+
+.index_cont {
+    width: 100%;
+}
+
+.index_cont p {
+    color: #444;
+    font-size: 15px;
+    line-height: 30px;
+    text-indent: 30px;
+}
+
+
+/*机构设置*/
+
+.organize ul li {
+    width: 33%;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    display: inline-block;
+    float: left;
+}
+
+.organize ul li a {
+    border: 1px solid #AE0A29;
+    background-color: #f9ecee;
+    padding: 25px 30px;
+    width: 100%;
+    display: inline-block;
+}
+
+.organize ul li a h6 {
+    font-size: 18px;
+    color: #333;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.organize ul li a p {
+    font-size: 14px;
+    color: #999;
+    line-height: 28px;
+    margin-top: 8px;
+}
+
+
+/*移动端*/
+
+@media screen and (max-width:1400px) {
+    .center {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .bannerPage {
+        width: 150px!important;
+    }
+    .bannerTxt {
+        width: 100%!important;
+        left: inherit;
+        margin-left: inherit;
+    }
+    .teacherPage {
+        width: 100%;
+        padding: 0 20px;
+        left: 0;
+        margin-left: inherit;
+    }
+    .teaPagination {
+        left: 20px!important;
+    }
+    .teacherPage .swiper-button-next {
+        right: 20px!important;
+    }
+    .teacherPage .swiper-button-prev {
+        right: 74px!important;
+    }
+    .advertise img {
+        width: 100%;
+    }
+    .logoBox {
+        width: 30%;
+    }
+    .logoBox .logo,
+    .logoBox .logo img {
+        width: 100%;
+    }
+    .advertise {
+        height: auto;
+    }
+    .lxwm {
+        width: 42%;
+    }
+    .code {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .top {
+        display: none;
+    }
+    header {
+        display: block;
+    }
+    .bannerTxt p {
+        font-size: 30px;
+    }
+    .tit p {
+        font-size: 32px;
+    }
+    .bannerTxt {
+        padding: 15px 20px!important;
+        height: auto;
+        line-height: inherit;
+    }
+    .yqlj ul li {
+        width: 48%;
+        padding-right: 0;
+    }
+    .detailCon p img{width: 100%!important;height: auto!important;}
+}
+
+@media screen and (max-width:992px) {
+    .bannerPage {
+        display: none;
+    }
+    .tit {
+        padding: 20px 0;
+    }
+    .bannerTxt p {
+        font-size: 24px;
+    }
+    .tit p {
+        font-size: 28px;
+    }
+    .indexBg {
+        padding: 20px 0;
+        padding-bottom: 120px;
+    }
+    .bannerTxt p {
+        width: 100%;
+        padding: 0;
+    }
+    .rowsBox .noticeRow {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+    .rowsBox {
+        flex-wrap: wrap;
+    }
+    .fooCont {
+        flex-wrap: wrap;
+    }
+    .yqlj,
+    .lxwm,
+    .rowNews {
+        width: 100%;
+    }
+    .yqlj {
+        border-right: none;
+        margin-bottom: 20px;
+    }
+    .rowsBox .row {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .leftNav {
+        display: none;
+    }
+    .rightCon {
+        width: 100%;
+        padding: 0 20px 40px 20px;
+    }
+    .facePlate,
+    .facePlate .center {
+        height: 220px;
+    }
+    .facePlate .platetxt {
+        left: auto;
+    }
+    .facePlate h6 {
+        font-size: 28px;
+    }
+    .facePlate span {
+        font-size: 14px;
+    }
+    .teacherBase .teacherBaseTxt {
+        margin-left: 30px;
+    }
+    .teacherList .teacherListItem {
+        width: 30%;
+    }
+    .teacherList .teacherListItem i {
+        text-align: center;
+        width: auto;
+    }
+    .teacherList .teacherListItem i img {
+       /* width: 220px;*/
+    }
+    .crumbs {
+        padding: 20px 0;
+    }
+    .teamPicBox .teamImgTxt {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .teamPicBox .teamImgTxt i {
+        margin: 0 auto
+    }
+    .timeBox h5 {
+        transform: scale(0.8);
+    }
+    .countItem h5 {
+        width: 100%;
+    }
+    .countItem {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .count .center {
+        height: auto;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .learnItem,
+    .poingItem {
+        display: block;
+        height: auto;
+    }
+    .learnItem i,
+    .poingItem i {
+        width: 100%;
+        text-align: center;
+    }
+    .learnItem .learnTxt,
+    .poinTxt {
+        margin-top: 20px;
+    }
+    .lxwmBox {
+        width: 100%;
+    }
+    .yqlj ul li {
+        width: 100%;
+    }
+    .yqlj {
+        justify-content: space-between;
+    }
+    .code {
+        display: none;
+    }
+    .lxwm {
+        justify-content: flex-start;
+    }
+    .rowsBox .row,
+    .rowsBox .noticeRow {
+        width: 100%;
+    }
+    .teacherPage {
+        display: none;
+    }
+    .indexBg {
+        padding-bottom: 40px;
+    }
+    .noticeListItem h6 {
+        width: 84%;
+    }
+    .personMess h6 {
+        margin: 20px 0
+    }
+    .teacherList .teacherListItem {
+        display: inline-block;
+        width: 75%;
+        margin-bottom: 30px;
+    }
+    .teacherList {
+        display: block;
+        text-align: center;
+    }
+    .teamPerson {
+        display: block;
+    }
+    .teamPerson i {
+        margin: 0 auto
+    }
+    .teamPerson .personMess {
+        margin: 0;
+        margin-top: 20px;
+    }
+    .teamPerson .personMess h5 {
+        text-align: center;
+    }
+    .teamPicBox .teamImgTxt {
+        width: 100%;
+    }
+    .organize ul li {
+        width: 100%;
+    }
+}
